@@ -8,7 +8,7 @@ class Pengetahuan extends CI_Controller
     {
         $this->load->view("admin/pengetahuan/data_pengetahuan");
     }
-    public function tambah()
+    public function tambah() //tambah
     {
         $this->load->view("admin/pengetahuan/tambah_pengetahuan");
     }
