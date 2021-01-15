@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Pengetahuan extends CI_Controller
 {
 
-    public function index()
+    public function index()//komen
     {
         $this->load->view("admin/pengetahuan/data_pengetahuan");
     }
