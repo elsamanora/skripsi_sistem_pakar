@@ -65,12 +65,12 @@
                         Aturan
                     </a>
                 </li>
-                <!-- <li>
+                <li>
                     <a href="<?= base_url() . 'index.php/admin/Penanganan' ?>">
                         <i class="fa fa-medkit fa-lg"></i>
                         Penanganan 
                     </a>
-                </li> -->
+                </li>
                 <li>
                     <a href="<?= base_url() . 'index.php/admin/User' ?>">
                         <i class="fa fa-user fa-lg"></i>
