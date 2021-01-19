@@ -74,7 +74,7 @@
                 <li>
                     <a href="<?= base_url() . 'index.php/admin/User' ?>">
                         <i class="fa fa-user fa-lg"></i>
-                        User perubahan
+                        User
                     </a>
                 </li>
             </ul>
