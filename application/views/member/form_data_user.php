@@ -34,7 +34,7 @@
         </div>
         <!-- Hero End -->
         <!-- Form Start-->
-        <div class="container">
+        <div class="container-fluid">
             <form name="" method="" action="">
                 <div class="row">
                     <div class="col-md-6">
