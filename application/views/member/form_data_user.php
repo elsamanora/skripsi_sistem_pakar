@@ -37,13 +37,13 @@
         <div class="about-me pb-top">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-md-6">
                         <div class="about-me-img mb-30">
                         <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-6">
+                    <div class="col-md-6">
                         <div class="about-me-caption">
                         <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
