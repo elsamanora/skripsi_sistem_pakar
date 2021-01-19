@@ -34,8 +34,8 @@
         </div>
         <!-- Hero End -->
         <!-- Form Start-->
-        
-            <div class="container">
+            <br><br><br><br>
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="about-me-img mb-10">
