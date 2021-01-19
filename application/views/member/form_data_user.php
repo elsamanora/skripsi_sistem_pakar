@@ -37,33 +37,12 @@
         <div class="about-me pb-top">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                <form name="tambah_gejala" method="POST" action="<?php echo site_url('admin/gejala/tambah') ?>">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group-inner">
-                                <label for="kode_gejala" class="pull-left">Kode Gejala</label>
-                                    <input type="text" name="kode_gejala" class="form-control form-control-sm <?php echo form_error('kode_gejala') ? 'is-invalid':''?>" placeholder="Masukkan Kode Gejala" required>
-                                    <div class="invalid-feedback">
-									    <?php echo form_error('kode_gejala') ?>
-								    </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group-inner">
-                                <label for="" class="pull-left">Nama Gejala</label>
-                                    <input type="text" name="nama_gejala" class="form-control form-control-sm <?php echo form_error('nama_gejala') ? 'is-invalid':''?>" placeholder="Masukkan Nama Gejala" required>
-                                    <div class="invalid-feedback">
-									    <?php echo form_error('nama_gejala') ?>
-								    </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-md-4">
-                                <a href="<?php echo base_url() . 'index.php/admin/gejala' ?>" class=" btn btn-danger btn-sm"></i>Batal</a>
-                                <button type="submit" name="" id="" value="tambah" class="btn btn-sm btn-primary mr-1">Simpan</button>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="col-lg-6 col-md-6">
+                        
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        
+                    </div>
                 </div>
             </div>
         </div>
