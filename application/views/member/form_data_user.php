@@ -36,7 +36,7 @@
         <!-- Form Start-->
         <div class="about-me pb-top">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
+                <div class="row">
                     <div class="col-md-6">
                         <div class="about-me-img mb-30">
                         <label for="exampleInputEmail1">Email address</label>
