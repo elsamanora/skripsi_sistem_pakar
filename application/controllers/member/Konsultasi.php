@@ -6,6 +6,6 @@ class Konsultasi extends CI_Controller
 
     public function index()
     {
-        $this->load->view("member/konsultasi.php");
+        $this->load->view("member/form_data_user.php");
     }
 }
