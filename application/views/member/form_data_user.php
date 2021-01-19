@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="about-me-img mb-30">
+                        <div class="about-me-img mb-10">
                         <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
