@@ -34,12 +34,27 @@
         </div>
         <!-- Hero End -->
         <!-- Form Start-->
+<<<<<<< Updated upstream
         <form name="" method="" action="">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+=======
+        <br><br><br>
+        <div class="container-fluid">
+            <form name="" method="" action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    
+>>>>>>> Stashed changes
                     </div>
                 </div>
                 <div class="col-md-6">
