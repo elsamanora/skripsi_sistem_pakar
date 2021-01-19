@@ -19,11 +19,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap">
-                                <h2>Form Konsultasi User</h2>
+                                <h2>Informasi Penyakit</h2>
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Home' ?>">Home</a></li>
-                                        <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Konsultasi' ?>">Konsultasi</a></li>
+                                        <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Informasi_penyakit' ?>">Informasi Penyakit</a></li>
                                     </ol>
                                 </nav>
                             </div>
@@ -38,10 +38,24 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-6 col-md-6">
+<<<<<<< Updated upstream
                         
                     </div>
                     <div class="col-lg-5 col-md-6">
                         
+=======
+                        <div class="about-me-img mb-30">
+                            <img src="<?php echo base_url(); ?>/assets/member/assets/img/gallery/dokter.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-me-caption">
+                            <h2>Apa itu demam berdarah ?</h2>
+                            <h5>Demam Berdarah Dengue adalah Penyakit menular yang disebabkan oleh virus Dengue</h5>
+                            <p>Ditandai dengan demam 2 - 7 Hari, disertai dengan manifestasi pendarahan dan penurunan trombosit (Trombositopenia).Dapat disertai dengan gejala yang tidak khas, seperti nyeri kepala
+                            nyeri otot & tulang, dan dapat juga disertai dengan ruam pada kulit.</p>
+                        </div>
+>>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
