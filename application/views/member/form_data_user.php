@@ -19,7 +19,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap">
-                                <h4>Form Data User</h4>
+                                <h2>Form Data User</h2>
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Home' ?>">Home</a></li>
@@ -34,19 +34,22 @@
         </div>
         <!-- Hero End -->
         <!-- Form Start-->
-        <form name="" method="" action="">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <div class="container">
+            <form name="" method="" action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    
                     </div>
                 </div>
-                <div class="col-md-6">
-                
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
+        
         <!-- Form End -->
 
         <!-- About Me Start -->
