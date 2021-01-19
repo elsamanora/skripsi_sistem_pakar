@@ -35,6 +35,7 @@
         <!-- Hero End -->
         <!-- Form Start-->
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <form name="" method="" action="">
             <div class="row">
                 <div class="col-md-6">
@@ -43,6 +44,8 @@
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 =======
         <br><br><br>
+=======
+>>>>>>> Stashed changes
         <div class="container-fluid">
             <form name="" method="" action="">
                 <div class="row">
