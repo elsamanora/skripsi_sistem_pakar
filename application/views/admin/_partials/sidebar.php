@@ -71,6 +71,12 @@
                         Penanganan 
                     </a>
                 </li>
+                <li>
+                    <a href="<?= base_url() . 'index.php/admin/User' ?>">
+                        <i class="fa fa-user fa-lg"></i>
+                        USerrrrrrrrrrrr
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
