@@ -34,9 +34,10 @@
         </div>
         <!-- Hero End -->
         <!-- Form Start-->
+        <div class="row">
         <div class="container-fluid">
             <form name="" method="" action="">
-                <div class="row">
+                
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
@@ -46,8 +47,9 @@
                     <div class="col-md-6">
                     
                     </div>
-                </div>
+                
             </form>
+        </div>
         </div>
         
         <!-- Form End -->
