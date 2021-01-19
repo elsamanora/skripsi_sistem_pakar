@@ -37,13 +37,7 @@
         <div class="about-me pb-top">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-6 col-md-6">
-<<<<<<< Updated upstream
-                        
-                    </div>
                     <div class="col-lg-5 col-md-6">
-                        
-=======
                         <div class="about-me-img mb-30">
                             <img src="<?php echo base_url(); ?>/assets/member/assets/img/gallery/dokter.jpg" alt="">
                         </div>
@@ -55,7 +49,6 @@
                             <p>Ditandai dengan demam 2 - 7 Hari, disertai dengan manifestasi pendarahan dan penurunan trombosit (Trombositopenia).Dapat disertai dengan gejala yang tidak khas, seperti nyeri kepala
                             nyeri otot & tulang, dan dapat juga disertai dengan ruam pada kulit.</p>
                         </div>
->>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
