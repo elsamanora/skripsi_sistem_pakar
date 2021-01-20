@@ -17,9 +17,9 @@
             <div class="slider-height2 d-flex align-items-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-xl-12 ">
                             <div class="hero-cap">
-                                <h4>Form Data User</h4>
+                                <h2>Form Data User</h2>
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Home' ?>">Home</a></li>
@@ -34,37 +34,86 @@
         </div>
         <!-- Hero End -->
         <!-- Form Start-->
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        <form name="" method="" action="">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-=======
-        <br><br><br>
-=======
->>>>>>> Stashed changes
-        <div class="container-fluid">
-            <form name="" method="" action="">
+            <br><br>
+            
+            <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <div class="about-me-img mb-10">
+                        <label for="nama_lengkap">Nama Lengkap</label>
+                            <input type="text" class="form-control" placeholder="Masukan nama lengkap">
                         </div>
                     </div>
                     <div class="col-md-6">
-                    
->>>>>>> Stashed changes
+                        <div class="about-me-caption">
+                        <label for="alamat">Alamat</label>
+                            <input type="text" class="form-control" placeholder="Masukan Alamat">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about-me-img mb-10">
+                        <label for="no_telp">No Telepon</label>
+                            <input type="number" class="form-control" placeholder="Masukan No Telepon">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-me-caption">
+                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                        <div>
+                            <select name="jenis_kelamin" class="form-control">
+                                <option value="">Pilih Jenis Kelamin</option>
+                                <option value="Laki-laki">Laki-Laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select> 
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about-me-img mb-10">
+                        <label for="usia">Usia</label>
+                            <div class="input-group mb-2 mr-sm-2">
+                                <input type="number" class="form-control" placeholder="Masukan Usia">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Tahun</div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-9">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Mulai Konsultasi</button>
+                    </div>
+                    
                 </div>
             </div>
-        </form>
+           
+            <br><br>
+        <!-- <div class="row">
+            <div class="container-fluid">
+                <form name="" method="" action="">
+                    
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                        
+                        </div>
+                </form>
+            </div>
+        </div> -->
+        
         <!-- Form End -->
 
         <!-- About Me Start -->
