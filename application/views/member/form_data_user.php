@@ -35,13 +35,16 @@
         <!-- Hero End -->
         <!-- Form Start-->
             <br><br>
-            
+            <form name="tambah_user" method="POST" action="<?php echo site_url('member/Form_gejala_user/index') ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="about-me-img mb-10">
                         <label for="nama_lengkap">Nama Lengkap</label>
-                            <input type="text" class="form-control" placeholder="Masukan nama lengkap">
+                            <input type="text" name="nama_user" class="form-control <?php echo form_error('nama_user') ? 'is-invalid':''?>" placeholder="Masukan nama lengkap" required>
+                            <div class="invalid-feedback">
+							    <?php echo form_error('nama_user') ?>
+							</div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -86,52 +89,15 @@
                 </div>
                 <br><br>
                 <div class="row">
-                    <div class="col-md-9">
-                    </div>
+                    <div class="col-md-9"></div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Mulai Konsultasi</button>
+                        <button type="submit" class="btn btn-primary">Mulai Konsultasi</button>
                     </div>
-                    
                 </div>
             </div>
-           
-            <br><br>
-        <!-- <div class="row">
-            <div class="container-fluid">
-                <form name="" method="" action="">
-                    
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                        
-                        </div>
-                </form>
-            </div>
-        </div> -->
+            </form><br><br>
         
         <!-- Form End -->
-
-        <!-- About Me Start -->
-        <!-- <div class="about-me pb-top">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-5 col-md-6">
-                        <div class="about-me-img mb-30">
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6">
-                        <div class="about-me-caption">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </main>
     <footer>
         <!-- Footer Start-->

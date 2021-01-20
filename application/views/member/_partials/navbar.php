@@ -17,7 +17,7 @@
                                      <ul id="navigation">
                                          <li> <a href="<?= base_url() . 'index.php/member/Home' ?>">Home</a></li>
                                          <li> <a href="<?= base_url() . 'index.php/member/Informasi_penyakit' ?>">Informasi Penyakit</a></li>
-                                         <li> <a href="<?= base_url() . 'index.php/member/Konsultasi' ?>">Konsultasi</a></li>
+                                         <li> <a href="<?= base_url() . 'index.php/member/Form_data_user' ?>">Konsultasi</a></li>
                                  </nav>
                              </div>
                              <div class="header-right-btn f-right d-none d-xl-block ml-20">
