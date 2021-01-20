@@ -29,17 +29,5 @@ class Form_data_user extends CI_Controller
         $this->load->view("member/konsultasi/halaman_konsultasi");
     }
 
-    // public function tambah()
-    // {
-    //     $user = $this->M_form_data_user;
-    //     $validation = $this->form_validation;
-    //     $validation->set_rules($user->rules());
-
-    //     if ($validation->run()) {
-    //         $user->save(); 
-    //         $this->load->view("member/konsultasi/halaman_konsultasi");
-    //     }
-    //     $this->load->view("member/Form_data_user/form_data_user");
-    // }
 
 }
