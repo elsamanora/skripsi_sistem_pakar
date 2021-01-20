@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2021 at 07:22 AM
+-- Generation Time: Jan 20, 2021 at 03:37 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -83,6 +83,28 @@ INSERT INTO `penyakit` (`id_penyakit`, `kode_penyakit`, `nama_penyakit`) VALUES
 (1, 'P1', 'Demam Berdarah'),
 (2, 'P2', 'Thypus');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id_user` tinyint(3) NOT NULL,
+  `nama_user` varchar(50) NOT NULL,
+  `umur` varchar(3) NOT NULL,
+  `jenis_kelamin` enum('Laki-laki','Perempuan') NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `no_telp` varchar(13) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id_user`, `nama_user`, `umur`, `jenis_kelamin`, `alamat`, `no_telp`) VALUES
+(1, 'Elsa Manora Ramadania', '21', 'Perempuan', 'Jember', '087876987987');
+
 --
 -- Indexes for dumped tables
 --
@@ -106,6 +128,12 @@ ALTER TABLE `penyakit`
   ADD PRIMARY KEY (`id_penyakit`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id_user`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -126,6 +154,12 @@ ALTER TABLE `penanganan`
 --
 ALTER TABLE `penyakit`
   MODIFY `id_penyakit` tinyint(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id_user` tinyint(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
