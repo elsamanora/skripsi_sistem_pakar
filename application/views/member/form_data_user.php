@@ -46,32 +46,31 @@
                     </div>
                     <div class="col-md-6">
                         <div class="about-me-caption">
-                        <label for="alamat">Alamat</label>
-                            <input type="text" class="form-control" placeholder="Masukan Alamat">
+                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                            <div>
+                                <select name="jenis_kelamin" class="form-control">
+                                    <option value="">Pilih Jenis Kelamin</option>
+                                    <option value="Laki-laki">Laki-Laki</option>
+                                    <option value="Perempuan">Perempuan</option>
+                                </select> 
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div><br>  
                 <div class="row">
                     <div class="col-md-6">
                         <div class="about-me-img mb-10">
-                        <label for="no_telp">No Telepon</label>
-                            <input type="number" class="form-control" placeholder="Masukan No Telepon">
+                        <label for="alamat">Alamat</label>
+                            <textarea name="alamat" cols="20" rows="3" placeholder="Masukan Alamat" class="form-control"></textarea>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="about-me-caption">
-                        <label for="jenis_kelamin">Jenis Kelamin</label>
-                        <div>
-                            <select name="jenis_kelamin" class="form-control">
-                                <option value="">Pilih Jenis Kelamin</option>
-                                <option value="Laki-laki">Laki-Laki</option>
-                                <option value="Perempuan">Perempuan</option>
-                            </select> 
-                        </div>
-                            
+                        <label for="no_telp">No Telepon</label>
+                            <input type="number" class="form-control" placeholder="Masukan No Telepon">
                         </div>
                     </div>
-                </div>
+                </div><br>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="about-me-img mb-10">
