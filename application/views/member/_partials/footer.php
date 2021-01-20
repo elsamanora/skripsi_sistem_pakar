@@ -16,7 +16,7 @@
                     <!-- Footer Social -->
                     <div class="footer-social f-right">
                         <a>Stay Connected</a>
-                        <a href="https://twitter.com/ElsaRamadania"><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>

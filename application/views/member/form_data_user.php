@@ -35,7 +35,7 @@
         <!-- Hero End -->
         <!-- Form Start-->
             <br><br>
-            <form name="tambah_user" method="POST" action="<?php echo site_url('member/Form_gejala_user/index') ?>">
+            <form name="tambah_user" method="POST" action="<?php echo site_url('member/form_data_user/tambah') ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -51,7 +51,7 @@
                         <div class="about-me-caption">
                         <label for="jenis_kelamin">Jenis Kelamin</label>
                             <div>
-                                <select name="jenis_kelamin" class="form-control">
+                                <select name="jenis_kelamin" class="form-control" required>
                                     <option value="">Pilih Jenis Kelamin</option>
                                     <option value="Laki-laki">Laki-Laki</option>
                                     <option value="Perempuan">Perempuan</option>
@@ -64,13 +64,19 @@
                     <div class="col-md-6">
                         <div class="about-me-img mb-10">
                         <label for="alamat">Alamat</label>
-                            <textarea name="alamat" cols="20" rows="3" placeholder="Masukan Alamat" class="form-control"></textarea>
+                            <textarea name="alamat" cols="20" rows="3" placeholder="Masukan Alamat" class="form-control <?php echo form_error('alamat') ? 'is-invalid':''?>" required></textarea>
+                            <div class="invalid-feedback">
+							    <?php echo form_error('alamat') ?>
+							</div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="about-me-caption">
                         <label for="no_telp">No Telepon</label>
-                            <input type="number" class="form-control" placeholder="Masukan No Telepon">
+                            <input type="number" class="form-control <?php echo form_error('alamat') ? 'is-invalid':''?>" placeholder="Masukan No Telepon" required>
+                            <div class="invalid-feedback">
+							    <?php echo form_error('no_telp') ?>
+							</div>
                         </div>
                     </div>
                 </div><br>
@@ -79,10 +85,13 @@
                         <div class="about-me-img mb-10">
                         <label for="usia">Usia</label>
                             <div class="input-group mb-2 mr-sm-2">
-                                <input type="number" class="form-control" placeholder="Masukan Usia">
+                                <input type="number" name="umur" class="form-control <?php echo form_error('umur') ? 'is-invalid':''?>" placeholder="Masukan Usia" required>
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">Tahun</div>
                                 </div>
+                                <div class="invalid-feedback">
+							        <?php echo form_error('umur') ?>
+							    </div>
                             </div>
                       </div>
                     </div>
@@ -96,7 +105,6 @@
                 </div>
             </div>
             </form><br><br>
-        
         <!-- Form End -->
     </main>
     <footer>
