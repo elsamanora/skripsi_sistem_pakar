@@ -24,7 +24,6 @@ class Form_data_user extends CI_Controller
 
         if ($validation->run()) {
             $user->save(); 
-            $this->session->set_flashdata('success', 'Berhasil disimpan');
             
         }
         $this->load->view("member/konsultasi/halaman_konsultasi");
