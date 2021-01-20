@@ -91,7 +91,7 @@
                 <div class="row">
                     <div class="col-md-9"></div>
                     <div class="col-md-2">
-                        <button type="submit" class="btn btn-primary">Mulai Konsultasi</button>
+                        <button type="submit" class="btn btn-danger">Mulai Konsultasi</button>
                     </div>
                 </div>
             </div>
