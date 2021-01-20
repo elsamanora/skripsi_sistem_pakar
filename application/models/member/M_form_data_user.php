@@ -52,7 +52,7 @@ Class M_form_data_user extends CI_Model
         $this->jenis_kelamin = $post["jenis_kelamin"];
         $this->alamat = $post["alamat"];
         $this->no_telp = $post["no_telp"];
-        return $this->db->insert($this->_table,$this);
+        $this->db->insert($this->_table,$this);
     }   
 
 }

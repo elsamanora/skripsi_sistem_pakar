@@ -22,8 +22,8 @@
                                 <h2>Form Data User</h2>
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Home' ?>">Home</a></li>
-                                        <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Konsultasi' ?>">Form Data User</a></li>
+                                        <li class="breadcrumb-item"> <a href="<?= base_url() . '/member/Home' ?>">Home</a></li>
+                                        <li class="breadcrumb-item"> <a href="<?= base_url() . '/member/Konsultasi' ?>">Form Data User</a></li>
                                     </ol>
                                 </nav>
                             </div>
@@ -35,7 +35,9 @@
         <!-- Hero End -->
         <!-- Form Start-->
             <br><br>
-            <form name="tambah_user" method="POST" action="<?php echo site_url('member/form_data_user/tambah') ?>">
+            <!-- <form name="tambah_user" method="POST" action="<?php echo site_url('member/form_data_user/tambah') ?>"> -->
+            <?php echo validation_errors(); ?>
+            <?php echo form_open('member/form_data_user/tambah'); ?>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -73,7 +75,7 @@
                     <div class="col-md-6">
                         <div class="about-me-caption">
                         <label for="no_telp">No Telepon</label>
-                            <input type="number" class="form-control <?php echo form_error('alamat') ? 'is-invalid':''?>" placeholder="Masukan No Telepon" required>
+                            <input type="number" name="no_telp" class="form-control <?php echo form_error('alamat') ? 'is-invalid':''?>" placeholder="Masukan No Telepon" required>
                             <div class="invalid-feedback">
 							    <?php echo form_error('no_telp') ?>
 							</div>
