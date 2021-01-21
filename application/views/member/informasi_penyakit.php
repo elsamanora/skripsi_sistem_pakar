@@ -51,7 +51,7 @@
                             <p>Virus dengue berukuran 35 - 45 nm. Virus ini dapat terus tumbuh dan berkembang dalam tubuh manusia dan nyamuk. Nyamuk betina menyimpan virus tersebut pada telurnya. nyamuk jantan akan menyimpan virus pada Nyamuk 
                             betina saat melakukan kontak seksual. selanjutnya Nyamuk betina tersebut akan menularkan virus ke manusia melalui gigitan. Hanya nyamuk aedes aegypti betina yang menggigit dan menularkan virus dengue.</p>
                             <p>Umumnya, nyamuk ini menggigit di siang ( pukul 09.00 -10.00) atau sore hari (pukul 16.00 - 17.00) . Namun tidak setiap gigitan nyamuk jenis ini dapat mengakibatkan demam berdarah. Hanya nyamuk yang mengandung virus dengue - lah 
-                            yang dapat menimbulkanpenyakit.</p>
+                            yang dapat menimbulkan penyakit.</p>
                         </div>
                     </div>
                 </div>
