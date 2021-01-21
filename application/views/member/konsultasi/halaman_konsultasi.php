@@ -52,7 +52,7 @@
                             <label>37 derajar</label><br>
                             <input type="radio" onclick="rowHide()" id="38" name="gender" value="other">
                             <label>38 derajat</label><br>
-                            <input type="radio" onclick="rowHide()" id="39" name="gender" value="other">
+                            <input type="radio" id="tiga_sembilan" name="gender" value="other">
                             <label>39 derajat</label><br>
                             <input type="radio" onclick="rowHide()" id="35" name="gender" value="other">
                             <label>35 derajat</label>
@@ -60,11 +60,11 @@
                 </div><br>
                 <div class="row" id="gejala2" hidden="">
                     <div>
-                        <label>1. Apakah anda mengalami panas tinggi mendadak ?</label><br>
-                            <input type="radio" id="gejala1" name="gender" value="38 derajat">
-                            <label>36 derajat</label><br>
+                        <label>2. Apakah anda mengalami Stress tinggi mendadak ?</label><br>
+                            <input type="radio" id="ya" name="gender" value="38 derajat">
+                            <label>Ya</label><br>
                             <input type="radio" id="female" name="gender" value="female">
-                            <label>37 derajar</label><br>
+                            <label>Tidak</label><br>
                             <input type="radio" id="other" name="gender" value="other">
                             <label>38 derajat</label><br>
                             <input type="radio" id="other" name="gender" value="other">
@@ -75,7 +75,7 @@
                 </div><br>
                 <div class="row" hidden="" id="gejala3">
                     <div>
-                        <label>1. Apakah anda mengalami panas tinggi mendadak ?</label><br>
+                        <label>3. Apakah anda mengalami panas tinggi mendadak ?</label><br>
                             <input type="radio" id="gejala1" name="gender" value="38 derajat">
                             <label>36 derajat</label><br>
                             <input type="radio" id="female" name="gender" value="female">
@@ -103,11 +103,16 @@
                     //     }
                     // });
                     var gejala1 = $('#gejala1');
-                        var gejala2 = $('#gejala2');
-                        var tiga_enam = $('#tiga_enam');
+                    var gejala2 = $('#gejala2');
+                    var gejala3 = $('#gejala3');
+                    var tiga_enam = $('#tiga_enam');
                     $('#tiga_enam').click(function(event) {
-                            gejala2.removeAttr('hidden');
+                        gejala2.removeAttr('hidden');
+                        $('#ya').click(function(event) {
+                            gejala3.removeAttr('hidden');
                         });
+                    });
+                    
                     // function rowHide() {
                         
                     //     var gejala1 = $('#gejala1');
