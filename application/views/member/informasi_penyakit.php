@@ -48,16 +48,10 @@
                             <h5>Demam Berdarah Dengue adalah Penyakit menular yang disebabkan oleh virus Dengue</h5>
                             <p>Ditandai dengan demam 2 - 7 Hari, disertai dengan manifestasi pendarahan dan penurunan trombosit (Trombositopenia). Dapat disertai dengan gejala yang tidak khas, seperti nyeri kepala
                             nyeri otot & tulang, dan dapat juga disertai dengan ruam pada kulit.</p>
-                            <p>Virus dengue berukuran 35 - 45 nm. Virus ini dapat terus tumbuh dan
-berkembang dalam tubuh manusia dan nyamuk. Nyamuk betina menyimpan virus
-tersebut pada telurnya. nyamuk jantan akan menyimpan virus pada Nyamuk betina
-saat melakukan kontak seksual. selanjutnya Nyamuk betina tersebut akan
-menularkan virus ke manusia melalui gigitan. Hanya nyamuk aedes aegypti betina
-yang menggigit dan menularkan virus dengue. Umumnya, nyamuk ini menggigit di
-siang ( pukul 09.00 -10.00) atau sore hari (pukul 16.00 - 17.00) . Namun tidak
-setiap gigitan nyamuk jenis ini dapat mengakibatkan demam berdarah. Hanya
-nyamuk yang mengandung virus dengue - lah yang dapat menimbulkan
-penyakit.</p>
+                            <p>Virus dengue berukuran 35 - 45 nm. Virus ini dapat terus tumbuh dan berkembang dalam tubuh manusia dan nyamuk. Nyamuk betina menyimpan virus tersebut pada telurnya. nyamuk jantan akan menyimpan virus pada Nyamuk 
+                            betina saat melakukan kontak seksual. selanjutnya Nyamuk betina tersebut akan menularkan virus ke manusia melalui gigitan. Hanya nyamuk aedes aegypti betina yang menggigit dan menularkan virus dengue.</p>
+                            <p>Umumnya, nyamuk ini menggigit di siang ( pukul 09.00 -10.00) atau sore hari (pukul 16.00 - 17.00) . Namun tidak setiap gigitan nyamuk jenis ini dapat mengakibatkan demam berdarah. Hanya nyamuk yang mengandung virus dengue - lah 
+                            yang dapat menimbulkanpenyakit.</p>
                         </div>
                     </div>
                 </div>
