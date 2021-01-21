@@ -41,11 +41,50 @@
                     <div>
                         <label><b>Pilih Gejala Sesuai Dengan Tingkat Keyakinan Yang Dirasakan :</b></label>
                     </div>
-                </div>
+                </div><br>
                 <div class="row">
                     <div>
-                        <label>Apakah anda mengalami panas tinggi mendadak ?</label><br>
-                        
+                        <label>1. Apakah anda mengalami panas tinggi mendadak ?</label><br>
+                            <input type="radio" id="gejala1" name="gejala1" value="38 derajat">
+                            <label>36 derajat</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label>37 derajar</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label>38 derajat</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label>39 derajat</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label>35 derajat</label>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div>
+                        <label>1. Apakah anda mengalami panas tinggi mendadak ?</label><br>
+                            <input type="radio" id="gejala1" name="gejala1" value="38 derajat">
+                            <label>36 derajat</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label>37 derajar</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label>38 derajat</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label>39 derajat</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label>35 derajat</label>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div>
+                        <label>1. Apakah anda mengalami panas tinggi mendadak ?</label><br>
+                            <input type="radio" id="gejala1" name="gejala1" value="38 derajat">
+                            <label>36 derajat</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label>37 derajar</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label>38 derajat</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label>39 derajat</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label>35 derajat</label>
                     </div>
                 </div>
             </div>
