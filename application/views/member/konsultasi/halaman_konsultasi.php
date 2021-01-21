@@ -3,6 +3,7 @@
 
 <head>
     <?php $this->load->view("member/_partials/head.php") ?>
+    <script type="text/javascript" src="<?php echo base_url(); ?>./assets/member/assets/js/vendor/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
@@ -42,10 +43,25 @@
                         <label><b>Pilih Gejala Sesuai Dengan Tingkat Keyakinan Yang Dirasakan :</b></label>
                     </div>
                 </div><br>
-                <div class="row">
+                <div class="row" id="gelaja1">
                     <div>
                         <label>1. Apakah anda mengalami panas tinggi mendadak ?</label><br>
-                            <input type="radio" id="gejala1" name="gejala1" value="38 derajat">
+                            <input type="radio" id="tiga_enam" name="gender" value="38 derajat">
+                            <label>36 derajat</label><br>
+                            <input type="radio" onclick="rowHide()" id="37" name="gender" value="female">
+                            <label>37 derajar</label><br>
+                            <input type="radio" onclick="rowHide()" id="38" name="gender" value="other">
+                            <label>38 derajat</label><br>
+                            <input type="radio" onclick="rowHide()" id="39" name="gender" value="other">
+                            <label>39 derajat</label><br>
+                            <input type="radio" onclick="rowHide()" id="35" name="gender" value="other">
+                            <label>35 derajat</label>
+                    </div>
+                </div><br>
+                <div class="row" id="gejala2" hidden="">
+                    <div>
+                        <label>1. Apakah anda mengalami panas tinggi mendadak ?</label><br>
+                            <input type="radio" id="gejala1" name="gender" value="38 derajat">
                             <label>36 derajat</label><br>
                             <input type="radio" id="female" name="gender" value="female">
                             <label>37 derajar</label><br>
@@ -57,25 +73,10 @@
                             <label>35 derajat</label>
                     </div>
                 </div><br>
-                <div class="row">
+                <div class="row" hidden="" id="gejala3">
                     <div>
                         <label>1. Apakah anda mengalami panas tinggi mendadak ?</label><br>
-                            <input type="radio" id="gejala1" name="gejala1" value="38 derajat">
-                            <label>36 derajat</label><br>
-                            <input type="radio" id="female" name="gender" value="female">
-                            <label>37 derajar</label><br>
-                            <input type="radio" id="other" name="gender" value="other">
-                            <label>38 derajat</label><br>
-                            <input type="radio" id="other" name="gender" value="other">
-                            <label>39 derajat</label><br>
-                            <input type="radio" id="other" name="gender" value="other">
-                            <label>35 derajat</label>
-                    </div>
-                </div><br>
-                <div class="row">
-                    <div>
-                        <label>1. Apakah anda mengalami panas tinggi mendadak ?</label><br>
-                            <input type="radio" id="gejala1" name="gejala1" value="38 derajat">
+                            <input type="radio" id="gejala1" name="gender" value="38 derajat">
                             <label>36 derajat</label><br>
                             <input type="radio" id="female" name="gender" value="female">
                             <label>37 derajar</label><br>
@@ -87,6 +88,41 @@
                             <label>35 derajat</label>
                     </div>
                 </div>
+                <script type="text/javascript">
+                    // $(document).ready(function() {
+
+                    //     var gejala1 = $('#gejala1');
+                    //     var gejala2 = $('#gejala2');
+                        
+                    //     var tiga_enam = $('#tiga_enam');
+                    //     if(tiga_enam.checked){
+                    //         console.log('TEST');
+                    //         gejala2.removeAttr('hidden');
+                    //     }else{
+                    //         console.log('TOLOL');
+                    //     }
+                    // });
+                    var gejala1 = $('#gejala1');
+                        var gejala2 = $('#gejala2');
+                        var tiga_enam = $('#tiga_enam');
+                    $('#tiga_enam').click(function(event) {
+                            gejala2.removeAttr('hidden');
+                        });
+                    // function rowHide() {
+                        
+                    //     var gejala1 = $('#gejala1');
+                    //     var gejala2 = $('#gejala2');
+                    //     var tiga_enam = $('#tiga_enam');
+                    //     if(tiga_enam.checked){
+                    //         console.log('TEST');
+                    //         gejala2.removeAttr('hidden');
+                    //     }else{
+                    //         console.log('TOLOL');
+                    //     }
+
+                    // }
+
+                </script>
             </div>
         </div>
     </main>
@@ -105,7 +141,6 @@
     <!-- All JS Custom Plugins Link Here here -->
     <script type="text/javascript" src="<?php echo base_url(); ?>./assets/member/assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>./assets/member/assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>./assets/member/assets/js/popper.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>./assets/member/assets/js/bootstrap.min.js"></script>
 
