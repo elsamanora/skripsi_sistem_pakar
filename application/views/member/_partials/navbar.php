@@ -15,13 +15,13 @@
                              <div class="main-menu f-right d-none d-lg-block">
                                  <nav>
                                      <ul id="navigation">
-                                         <li> <a href="<?= base_url() . 'index.php/member/Home' ?>">Home</a></li>
-                                         <li> <a href="<?= base_url() . 'index.php/member/Informasi_penyakit' ?>">Informasi Penyakit</a></li>
-                                         <li> <a href="<?= base_url() . 'index.php/member/Form_data_user' ?>">Konsultasi</a></li>
+                                         <li> <a href="<?= base_url() . 'member/Home' ?>">Home</a></li>
+                                         <li> <a href="<?= base_url() . 'member/Informasi_penyakit' ?>">Informasi Penyakit</a></li>
+                                         <li> <a href="<?= base_url() . 'member/Form_data_user' ?>">Konsultasi</a></li>
                                  </nav>
                              </div>
                              <div class="header-right-btn f-right d-none d-xl-block ml-20">
-                                 <a href="<?= base_url() . 'index.php/member/Login' ?>" class="btn header-btn">Login Admin</a>
+                                 <a href="<?= base_url() . 'member/Login' ?>" class="btn header-btn">Login Admin</a>
                              </div>
                          </div>
                      </div>

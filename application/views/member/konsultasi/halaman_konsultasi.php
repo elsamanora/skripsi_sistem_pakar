@@ -24,7 +24,7 @@
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Home' ?>">Home</a></li>
-                                        <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Informasi_penyakit' ?>">Konsultasi Penyakit</a></li>
+                                        <li class="breadcrumb-item"> <a href="<?= base_url() . 'index.php/member/Form_data_user' ?>">Konsultasi Penyakit</a></li>
                                     </ol>
                                 </nav>
                             </div>
