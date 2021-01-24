@@ -3,7 +3,7 @@
         <div class="preloader-inner position-relative">
             <div class="preloader-circle"></div>
             <div class="preloader-img pere-text">
-                <img src="<?php echo base_url(); ?>/assets/member/assets/img/logo/loder.jpg" alt="">
+                <img src="<?php echo base_url(); ?>/assets/member/assets/img/logo/lode.jpg" alt="">
             </div>
         </div>
     </div>
