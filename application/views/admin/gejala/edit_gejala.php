@@ -60,7 +60,7 @@
                                             <div class="col-md-6">
                                                 <div class="form-group-inner">
                                                     <label for="kode_gejala" class="pull-left">Kode Gejala</label>
-                                                    <input type="text" name="kode_gejala" class="form-control form-control-sm <?php echo form_error('kode_gejala') ? 'is-invalid':''?>" placeholder="Masukkan Kode Gejala" value = "<?php echo $gejala->kode_gejala ?>" required>
+                                                    <input type="text" name="kode_gejala" class="form-control form-control-sm <?php echo form_error('kode_gejala') ? 'is-invalid':''?>" placeholder="Masukkan Kode Gejala" value = "<?php echo $gejala->kode_gejala ?>" readonly>
                                                     <div class="invalid-feedback">
 									                    <?php echo form_error('kode_gejala') ?>
 								                    </div>
