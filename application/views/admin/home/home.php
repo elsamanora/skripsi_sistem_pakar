@@ -57,7 +57,7 @@
                                             <div class="widget-subheading">Total Penyakit pada sistem</div>
                                         </div>
                                         <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>3</span></div>
+                                            <div class="widget-numbers text-white"><span><?php echo $penyakit;?></span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@
                                             <div class="widget-subheading">Total Gejala Pada Sistem</div>
                                         </div>
                                         <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>30</span></div>
+                                            <div class="widget-numbers text-white"><span><?php echo $gejala;?></span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@
                                             <div class="widget-subheading">Total user pada sistem</div>
                                         </div>
                                         <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>46</span></div>
+                                            <div class="widget-numbers text-white"><span><?php echo $user;?></span></div>
                                         </div>
                                     </div>
                                 </div>
