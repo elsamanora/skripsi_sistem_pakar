@@ -54,7 +54,7 @@
                                     <div class="widget-content-wrapper text-white">
                                         <div class="widget-content-left">
                                             <div class="widget-heading">Penyakit</div>
-                                            <div class="widget-subheading">Total Penyakit pada sistem</div>
+                                            <div class="widget-subheading">Jumlah Penyakit</div>
                                         </div>
                                         <div class="widget-content-right">
                                             <div class="widget-numbers text-white"><span><?php echo $penyakit;?></span></div>
@@ -67,7 +67,7 @@
                                     <div class="widget-content-wrapper text-white">
                                         <div class="widget-content-left">
                                             <div class="widget-heading">Gejala </div>
-                                            <div class="widget-subheading">Total Gejala Pada Sistem</div>
+                                            <div class="widget-subheading">Jumlah Gejala</div>
                                         </div>
                                         <div class="widget-content-right">
                                             <div class="widget-numbers text-white"><span><?php echo $gejala;?></span></div>
@@ -80,7 +80,7 @@
                                     <div class="widget-content-wrapper text-white">
                                         <div class="widget-content-left">
                                             <div class="widget-heading">User</div>
-                                            <div class="widget-subheading">Total user pada sistem</div>
+                                            <div class="widget-subheading">Jumlah User</div>
                                         </div>
                                         <div class="widget-content-right">
                                             <div class="widget-numbers text-white"><span><?php echo $user;?></span></div>

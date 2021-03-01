@@ -20,17 +20,17 @@
                             <div class="col-lg-6">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header">
-                                        <b><h3 class="text-center my-4">Login Page</h3></b>
+                                        <b><h3 class="text-center my-4">Halaman Login</h3></b>
                                     </div>
                                     <div class="card-body">
                                         <form>
                                             <div class="form-group">
                                                 <label class="small mb-2" for="inputUsername">Username</label>
-                                                <input class="form-control py-4" id="inputUsername" type="username" placeholder="Enter Username" />
+                                                <input class="form-control py-4" id="inputUsername" type="username" placeholder="Masukan Username" />
                                             </div>
                                             <div class="form-group">
                                                 <label class="small mb-2" for="inputPassword">Password</label>
-                                                <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter Password" />
+                                                <input class="form-control py-4" id="inputPassword" type="password" placeholder="Masukan Password" />
                                             </div>
                                             <div class="form-group">
                                                 <center><button type="button" class="btn btn-danger">Login</button></center><br>
