@@ -54,23 +54,25 @@
                                             <thead align="center">
                                                 <tr>
                                                     <th>No</th>
+                                                    <th>Kode Aturan</th>
                                                     <th>Aturan</th>
                                                     <th>Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody align="center">
+                                            <?php 
+                                            $no = 1;
+                                            foreach ($aturan as $data_aturan): ?> 
                                                 <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Jika Demam tinggi mendadak
-                                                        Dan berlangsung selama 2 - 7 hari
-                                                        Dan Ruam pada kulit
-                                                        Maka Demam Berdarah
-                                                    </td>
+                                                    <th><?php echo $no++ ?></th>
+                                                    <td><?php echo $data_aturan->kode_aturan ?></td>
+                                                    <td><?php echo $data_aturan->nama_aturan ?></td>
                                                     <td>
                                                         <a href="<?php echo base_url() . 'index.php/admin/aturan/edit' ?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
                                                         <a href="<?php echo base_url() . 'index.php/admin/aturan/tambah' ?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
                                                     </td>
                                                 </tr>
+                                                <?php endforeach ?>
                                             </tbody>
                                         </table>
                                     </div>
