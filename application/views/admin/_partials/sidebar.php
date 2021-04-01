@@ -60,6 +60,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="<?= base_url() . 'index.php/admin/Pertanyaan' ?>">
+                        <i class="fas fa-question"></i>
+                        Pertanyaan 
+                    </a>
+                </li>
+                <li>
                     <a href="<?= base_url() . 'index.php/admin/Aturan' ?>">
                         <i class="fa fa-sliders-h fa-lg"></i>
                         Aturan
