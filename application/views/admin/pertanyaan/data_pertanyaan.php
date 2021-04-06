@@ -29,10 +29,10 @@
                         <div class="page-title-wrapper">
                             <div class="page-title-heading">
                                 <div class="page-title-icon">
-                                    <i class="fa fa-medkit"></i>
+                                    <i class="fas fa-question"></i>
                                 </div>
                                 <div>
-                                    Saran
+                                    Pertanyaan
                                 </div>
                             </div>
                         </div>
@@ -43,37 +43,37 @@
                             <div class="card shadow mb-4">
                                 <!-- Datatable -->
                                 <div class="card-header">
-                                    Data Penanganan
+                                    Data Pertanyaan
                                 </div>
                                 <div class="card-body">
                                     <!-- button -->
-                                    <a href="<?php echo base_url() . 'index.php/admin/penanganan/tambah' ?>" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a>
+                                    <a href="<?php echo base_url() . 'index.php/admin/pertanyaan/tambah' ?>" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a>
                                     <!-- Table -->
                                     <div class="table-responsive">
                                         <table class="mb-0 table table-striped">
                                             <thead align="center">
                                                 <tr>
                                                     <th>No</th>
-                                                    <th>Kode Penanganan</th>
-                                                    <th>Nama Penanganan</th>
+                                                    <th>Kode Pertanyaan</th>
+                                                    <th>Pertanyaan</th>
                                                     <th>Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody align="center">
                                             <?php 
                                             $no = 1;
-                                            foreach ($penanganan as $data_penanganan): ?> 
+                                            foreach ($pertanyaan as $data_pertanyaan): ?> 
                                                 <tr>
                                                      <td><?php echo $no++ ?></td>
                                                     <td>
-                                                        <?php echo $data_penanganan->kode_penanganan ?>
+                                                        <?php echo $data_pertanyaan->kode_pertanyaan ?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $data_penanganan->nama_penanganan ?>
+                                                        <?php echo $data_pertanyaan->nama_pertanyaan ?>
                                                     </td>
                                                     <td>
-                                                        <a href="<?php echo base_url() . 'index.php/admin/Penanganan/edit'?>/<?=$data_penanganan->id_penanganan?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
-                                                        <a onclick="return confirm('Apakah anda yakin ?');" href="<?php echo base_url() . 'index.php/admin/Penanganan/delete'?>/<?=$data_penanganan->id_penanganan?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                        <a href="<?php echo base_url() . 'index.php/admin/pertanyaan/edit'?>/<?=$data_pertanyaan->id_pertanyaan?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
+                                                        <a onclick="return confirm('Apakah anda yakin ingin menghapus data tersebut ?');" href="<?php echo base_url() . 'index.php/admin/Pertanyaan/delete'?>/<?=$data_pertanyaan->id_pertanyaan?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
                                                     </td>
                                                 </tr>
                                                 <?php endforeach ?>

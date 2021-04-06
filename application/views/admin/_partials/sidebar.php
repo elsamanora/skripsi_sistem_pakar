@@ -74,7 +74,7 @@
                 <li>
                     <a href="<?= base_url() . 'index.php/admin/Penanganan' ?>">
                         <i class="fa fa-medkit fa-lg"></i>
-                        Penanganan 
+                        Saran
                     </a>
                 </li>
                 <li>

@@ -21,6 +21,7 @@
         <!-- Sidebar-->
         <div class="app-main">
             <?php $this->load->view("admin/_partials/sidebar.php") ?>
+
             <!-- Main breadcrumb -->
             <div class="app-main__outer">
                 <div class="app-main__inner">
@@ -28,10 +29,10 @@
                         <div class="page-title-wrapper">
                             <div class="page-title-heading">
                                 <div class="page-title-icon">
-                                    <i class="fa fa-medkit"></i>
+                                    <i class="fas fa-question"></i>
                                 </div>
                                 <div>
-                                    Saran
+                                    Pertanyaan
                                 </div>
                             </div>
                         </div>
@@ -42,7 +43,7 @@
                             <div class="card shadow mb-4">
                                 <!-- Datatable -->
                                 <div class="card-header">
-                                    Edit Penanganan
+                                    Edit Pertanyaan
                                 </div>
                                 <!-- Alert Success -->
                                 <div class="card-body">
@@ -52,35 +53,35 @@
                                     </div>
 				                <?php endif; ?>
                                 <!-- End Alert -->
-                                <div class="card-body">
                                     <!-- Form -->
-                                    <form name="edit_penanganan" method="POST" action="">
-                                    <input type="hidden" name="id_penanganan" value="<?php echo $penanganan->id_penanganan?>" />
+                                    <form name="edit_gejala" method="POST" action="">
+                                    <input type="hidden" name="id_pertanyaan" value="<?php echo $pertanyaan->id_pertanyaan?>" />
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group-inner">
-                                                    <label for="" class="pull-left">Kode Penanganan</label>
-                                                    <input type="text" name="kode_penanganan" class="form-control form-control-sm <?php echo form_error('kode_penanganan') ? 'is-invalid':''?> " placeholder="Masukkan Kode Penanganan" value = "<?php echo $penanganan->kode_penanganan ?>" required>
+                                                    <label for="kode_pertanyaan" class="pull-left">Kode pertanyaan</label>
+                                                    <input type="text" name="kode_pertanyaan" class="form-control form-control-sm <?php echo form_error('kode_pertanyaan') ? 'is-invalid':''?>" placeholder="Masukkan Kode Pertanyaan" value = "<?php echo $pertanyaan->kode_pertanyaan ?>" readonly>
                                                     <div class="invalid-feedback">
-									                    <?php echo form_error('kode_penanganan') ?>
+									                    <?php echo form_error('kode_pertanyaan') ?>
 								                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group-inner">
-                                                    <label for="" class="pull-left">Nama Penanganan</label>
-                                                    <input type="text" name="nama_penanganan" class="form-control form-control-sm <?php echo form_error('nama_penanganan') ? 'is-invalid':''?> " placeholder="Masukkan Penanganan" value = "<?php echo $penanganan ->nama_penanganan?>" required>
-                                                    <div class="invalid-feedback">
-									                    <?php echo form_error('nama_penanganan') ?>
-								                    </div>
+                                                    <label for="" class="pull-left">Pertanyaan</label>
+                                                    <input type="text" name="nama_pertanyaan" class="form-control form-control-sm <?php echo form_error('nama_pertanyaan') ? 'is-invalid':''?>" placeholder="Masukkan Pertanyaan" value = "<?php echo $pertanyaan ->nama_pertanyaan?>" required>
                                                 </div>
+                                                <div class="invalid-feedback">
+									                    <?php echo form_error('nama_pertanyaan') ?>
+								                </div>
                                             </div>
                                         </div>
+
                                         <div class="row mt-3">
                                             <div class="col-md-4">
-                                                <a href="<?php echo base_url() . 'index.php/admin/penanganan' ?>" class=" btn btn-danger btn-sm"></i>Batal</a>
+                                                <a href="<?php echo base_url() . 'index.php/admin/pertanyaan' ?>" class=" btn btn-danger btn-sm"></i>Batal</a>
                                                 <!--<button type="reset" class="btn btn-danger btn-sm">Reset</button>-->
-                                                <button type="submit" name="" id="simpan_penyakit" value="" class="btn btn-sm btn-primary mr-1">Simpan</button>
+                                                <button type="submit" name="" id="" class="btn btn-sm btn-primary mr-1">Simpan</button>
                                             </div>
                                         </div>
                                     </form>
@@ -89,7 +90,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <!-- footer -->
                 <?php $this->load->view("admin/_partials/footer.php") ?>

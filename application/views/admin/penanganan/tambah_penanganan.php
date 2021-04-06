@@ -31,7 +31,7 @@
                                     <i class="fa fa-medkit"></i>
                                 </div>
                                 <div>
-                                    Penanganan
+                                    Saran
                                 </div>
                             </div>
                         </div>
