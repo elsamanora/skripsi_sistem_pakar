@@ -7,6 +7,12 @@ Class M_pertanyaan extends CI_Model
     public $id_pertanyaan;
     public $kode_pertanyaan;
     public $nama_pertanyaan;
+    public $jawaban_sangat_yakin;
+    public $jawaban_yakin;
+    public $jawaban_cukup_yakin;
+    public $jawaban_sedikit_yakin;
+    public $jawaban_kurang_yakin;
+    public $jawaban_tidak_yakin;
 
     public function rules() //aturan untuk memvalidasi input
     {
@@ -21,7 +27,37 @@ Class M_pertanyaan extends CI_Model
                 'field' => 'nama_pertanyaan',
                 'label' => 'nama_pertanyaan',
                 'rules' => 'required'
-            ]
+            ],
+            [
+                'field' => 'jawaban_sangat_yakin',
+                'label' => 'jawaban_sangat_yakin',
+                'rules' => 'required'
+            ],
+            [
+                'field' => 'jawaban_yakin',
+                'label' => 'jawaban_yakin',
+                'rules' => 'required'
+            ],
+            [
+                'field' => 'jawaban_cukup_yakin',
+                'label' => 'jawaban_cukup_yakin',
+                'rules' => 'required'
+            ],
+            [
+                'field' => 'jawaban_sedikit_yakin',
+                'label' => 'jawaban_sedikit_yakin',
+                'rules' => 'required'
+            ],
+            [
+                'field' => 'jawaban_kurang_yakin',
+                'label' => 'jawaban_kurang_yakin',
+                'rules' => 'required'
+            ],
+            [
+                'field' => 'jawaban_tidak_yakin',
+                'label' => 'jawaban_tidak_yakin',
+                'rules' => 'required'
+            ],
         ];
     }
 

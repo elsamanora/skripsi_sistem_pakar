@@ -75,8 +75,68 @@
 									                    <?php echo form_error('nama_pertanyaan') ?>
 								                </div>
                                             </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group-inner">
+                                                    <label for="jawaban_sangat_yakin" class="pull-left">Jawaban Sangat Yakin (1)</label>
+                                                    <input type="text" name="jawaban_sangat_yakin" class="form-control form-control-sm <?php echo form_error('jawaban_sangat_yakin') ? 'is-invalid':''?>" placeholder="Masukkan Jawaban Sangat Yakin" value = "<?php echo $pertanyaan->jawaban_sangat_yakin ?>" required>
+                                                    <div class="invalid-feedback">
+									                    <?php echo form_error('jawaban_sangat_yakin') ?>
+								                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group-inner">
+                                                    <label for="jawaban_yakin" class="pull-left">Jawaban Yakin (0,8)</label>
+                                                    <input type="text" name="jawaban_yakin" class="form-control form-control-sm <?php echo form_error('jawaban_yakin') ? 'is-invalid':''?>" placeholder="Masukkan Jawaban Yakin" value = "<?php echo $pertanyaan ->jawaban_yakin?>" required>
+                                                </div>
+                                                <div class="invalid-feedback">
+									                    <?php echo form_error('jawaban_yakin') ?>
+								                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group-inner">
+                                                    <label for="jawaban_cukup_yakin" class="pull-left">Jawaban Cukup Yakin (0,6)</label>
+                                                    <input type="text" name="jawaban_cukup_yakin" class="form-control form-control-sm <?php echo form_error('jawaban_cukup_yakin') ? 'is-invalid':''?>" placeholder="Masukkan Jawaban Cukup Yakin" value = "<?php echo $pertanyaan->jawaban_cukup_yakin ?>" required>
+                                                    <div class="invalid-feedback">
+									                    <?php echo form_error('jawaban_cukup_yakin') ?>
+								                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group-inner">
+                                                    <label for="jawaban_sedikit_yakin" class="pull-left">Jawaban Sedikit Yakin (0,4)</label>
+                                                    <input type="text" name="jawaban_sedikit_yakin" class="form-control form-control-sm <?php echo form_error('jawaban_sedikit_yakin') ? 'is-invalid':''?>" placeholder="Masukkan Jawaban Sedikit Yakin" value = "<?php echo $pertanyaan ->jawaban_sedikit_yakin?>" required>
+                                                </div>
+                                                <div class="invalid-feedback">
+									                    <?php echo form_error('jawaban_sedikit_yakin') ?>
+								                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group-inner">
+                                                    <label for="jawaban_kurang_yakin" class="pull-left">Jawaban Kurang Yakin (0,2)</label>
+                                                    <input type="text" name="jawaban_kurang_yakin" class="form-control form-control-sm <?php echo form_error('jawaban_kurang_yakin') ? 'is-invalid':''?>" placeholder="Masukkan Jawaban Kurang Yakin" value = "<?php echo $pertanyaan->jawaban_kurang_yakin ?>" required>
+                                                    <div class="invalid-feedback">
+									                    <?php echo form_error('jawaban_kurang_yakin') ?>
+								                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group-inner">
+                                                    <label for="jawaban_tidak_yakin" class="pull-left">Jawaban Tidak Yakin (0)</label>
+                                                    <input type="text" name="jawaban_tidak_yakin" class="form-control form-control-sm <?php echo form_error('jawaban_tidak_yakin') ? 'is-invalid':''?>" placeholder="Masukkan Jawaban Tidak Yakin" value = "<?php echo $pertanyaan ->jawaban_tidak_yakin?>" required>
+                                                </div>
+                                                <div class="invalid-feedback">
+									                    <?php echo form_error('jawaban_tidak_yakin') ?>
+								                </div>
+                                            </div>
                                         </div>
-
+                                        <br>
                                         <div class="row mt-3">
                                             <div class="col-md-4">
                                                 <a href="<?php echo base_url() . 'index.php/admin/pertanyaan' ?>" class=" btn btn-danger btn-sm"></i>Batal</a>

@@ -56,7 +56,13 @@
                                                     <th>No</th>
                                                     <th>Kode Pertanyaan</th>
                                                     <th>Pertanyaan</th>
-                                                    <th>Aksi</th>
+                                                    <th>Jwbn Sangat Yakin(1)</th>
+                                                    <th>Jwbn Yakin (0,8)</th>
+                                                    <th>Jwbn Cukup Yakin (0,6)</th>
+                                                    <th>Jwbn Sedikit Yakin (0,4)</th>
+                                                    <th>Jwbn Kurang Yakin (0,2)</th>
+                                                    <th>Jwbn Tidak (0)</th>
+                                                    <th>Aksi</th> 
                                                 </tr>
                                             </thead>
                                             <tbody align="center">
@@ -64,12 +70,30 @@
                                             $no = 1;
                                             foreach ($pertanyaan as $data_pertanyaan): ?> 
                                                 <tr>
-                                                     <td><?php echo $no++ ?></td>
+                                                    <td><?php echo $no++ ?></td>
                                                     <td>
                                                         <?php echo $data_pertanyaan->kode_pertanyaan ?>
                                                     </td>
                                                     <td>
                                                         <?php echo $data_pertanyaan->nama_pertanyaan ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php echo $data_pertanyaan->jawaban_sangat_yakin?>
+                                                    </td>
+                                                    <td>
+                                                        <?php echo $data_pertanyaan->jawaban_yakin ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php echo $data_pertanyaan->jawaban_cukup_yakin ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php echo $data_pertanyaan->jawaban_sedikit_yakin ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php echo $data_pertanyaan->jawaban_kurang_yakin ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php echo $data_pertanyaan->jawaban_tidak_yakin ?>
                                                     </td>
                                                     <td>
                                                         <a href="<?php echo base_url() . 'index.php/admin/pertanyaan/edit'?>/<?=$data_pertanyaan->id_pertanyaan?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
