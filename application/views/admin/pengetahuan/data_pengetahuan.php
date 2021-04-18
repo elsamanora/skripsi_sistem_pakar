@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- button -->
-                                    <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/tambah' ?>" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a>
+                                    <!-- <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/tambah' ?>" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a> -->
                                     <!-- Table -->
                                     <div class="table-responsive">
                                         <table class="mb-0 table table-striped">
@@ -56,41 +56,31 @@
                                                     <th>No</th>
                                                     <th>Nama Penyakit</th>
                                                     <th>Gejala</th>
-                                                    <th>MB</th>
-                                                    <th>Aksi</th>
+                                                    <th>Nilai CF Pakar</th>
+                                                    <!-- <th>Aksi</th> -->
                                                 </tr>
                                             </thead>
                                             <tbody align="center">
+                                            <?php 
+                                            $no = 1;
+                                            foreach ($pengetahuan as $data_pengetahuan): ?> 
                                                 <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Demam Berdarah</td>
-                                                    <td>Demam tinggi mendadak</td>
-                                                    <td>0.6</td>
+                                                     <td><?php echo $no++ ?></td>
                                                     <td>
-                                                        <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/edit' ?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
-                                                        <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/tambah' ?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                        <?php echo $data_pengetahuan->nama_penyakit ?>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Demam Berdarah</td>
-                                                    <td>Trombosit Menurun</td>
-                                                    <td>0.8</td>
                                                     <td>
-                                                        <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/edit' ?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
-                                                        <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/tambah' ?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                        <?php echo $data_pengetahuan->nama_gejala ?>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Demam Berdarah</td>
-                                                    <td>Ruam Kulit</td>
-                                                    <td>0.8</td>
                                                     <td>
-                                                        <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/edit' ?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
-                                                        <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/tambah' ?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                        <?php echo $data_pengetahuan->nilai_cf_pakar ?>
                                                     </td>
+                                                    <!-- <td>
+                                                        <a href="<?php echo base_url() . 'index.php/admin/Penanganan/edit'?>/<?=$data_penanganan->id_penanganan?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
+                                                        <a onclick="return confirm('Apakah anda yakin ?');" href="<?php echo base_url() . 'index.php/admin/Penanganan/delete'?>/<?=$data_penanganan->id_penanganan?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                    </td> -->
                                                 </tr>
+                                                <?php endforeach ?>
                                             </tbody>
                                         </table>
                                     </div>

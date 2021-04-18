@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- button -->
-                                    <a href="<?php echo base_url() . 'index.php/admin/penyakit/add' ?>" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a>
+                                    <!-- <a href="<?php echo base_url() . 'index.php/admin/penyakit/add' ?>" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a> -->
                                     <!-- Table -->
                                     <div class="table-responsive">
                                         <table class="mb-0 table table-striped">
@@ -56,7 +56,7 @@
                                                     <th>No</th>
                                                     <th>Kode Penyakit</th>
                                                     <th>Nama Penyakit</th>
-                                                    <th>Aksi</th>
+                                                    <!-- <th>Aksi</th> -->
                                                 </tr>
                                             </thead>
                                             <tbody align="center">
@@ -71,10 +71,10 @@
                                                     <td>
                                                         <?php echo $data_penyakit->nama_penyakit ?>
                                                     </td>
-                                                    <td>
+                                                    <!-- <td>
                                                         <a href="<?php echo base_url() . 'index.php/admin/penyakit/edit' ?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
                                                         <a href="<?php echo base_url() . 'index.php/admin/penyakit/delete' ?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
-                                                    </td>
+                                                    </td> -->
                                                 </tr>
                                                 <?php endforeach ?>
                                             </tbody>
