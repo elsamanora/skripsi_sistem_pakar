@@ -77,6 +77,7 @@ Class M_pertanyaan extends CI_Model
         // $this->id_gejala = uniqid();
         $this->kode_pertanyaan = $post["kode_pertanyaan"];
         $this->nama_pertanyaan = $post["nama_pertanyaan"];
+        $this->nama_pertanyaan = $post["nama_pertanyaan"];
         return $this->db->insert($this->_table,$this);
     }   
 

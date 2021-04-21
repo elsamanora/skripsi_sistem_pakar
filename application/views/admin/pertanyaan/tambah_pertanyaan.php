@@ -128,7 +128,7 @@
                                             <div class="col-md-6">
                                                 <div class="form-group-inner">
                                                     <label for="jawaban_tidak_yakin" class="pull-left">Jawaban Tidak Yakin (0)</label>
-                                                    <input type="text" name="jawaban_tidak_yakin" class="form-control form-control-sm <?php echo form_error('jawaban_tidak_yakin') ? 'is-invalid':''?>" placeholder="Masukkan Jawaban Tidak Yakin   " required>
+                                                    <input type="text" name="jawaban_tidak_yakin" class="form-control form-control-sm <?php echo form_error('jawaban_tidak_yakin') ? 'is-invalid':''?>" placeholder="Masukkan Jawaban Tidak Yakin " required>
                                                 </div>
                                                 <div class="invalid-feedback">
 									                    <?php echo form_error('nama_pertanyaan') ?>

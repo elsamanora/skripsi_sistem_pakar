@@ -8,6 +8,7 @@ class Form_data_user extends CI_Controller
     {
         parent::__construct();
         $this->load->model("member/M_form_data_user");
+        $this->load->model("member/M_Pertanyaan");
         $this->load->library('form_validation'); //memvalidasi input pada method tambah dan edit
     }
 

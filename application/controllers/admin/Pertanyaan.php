@@ -25,7 +25,6 @@ class Pertanyaan extends CI_Controller
         if ($validation->run()) {
             $pertanyaan->save(); 
             $this->session->set_flashdata('success', 'Berhasil disimpan');
-            
         }
         $this->load->view("admin/pertanyaan/tambah_pertanyaan");
     }
