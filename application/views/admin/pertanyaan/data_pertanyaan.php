@@ -55,6 +55,7 @@
                                                 <tr>
                                                     <th>No</th>
                                                     <th>Kode Pertanyaan</th>
+                                                    <th>Nama Gejala</th>
                                                     <th>Pertanyaan</th>
                                                     <th>Jwbn Sangat Yakin(1)</th>
                                                     <th>Jwbn Yakin (0,8)</th>
@@ -70,9 +71,12 @@
                                             $no = 1;
                                             foreach ($pertanyaan as $data_pertanyaan): ?> 
                                                 <tr>
-                                                    <td><?php echo $no++ ?></td>
+                                                    <td><?php echo $no++?></td>
                                                     <td>
                                                         <?php echo $data_pertanyaan->kode_pertanyaan ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php echo $data_pertanyaan->nama_gejala ?>
                                                     </td>
                                                     <td>
                                                         <?php echo $data_pertanyaan->nama_pertanyaan ?>

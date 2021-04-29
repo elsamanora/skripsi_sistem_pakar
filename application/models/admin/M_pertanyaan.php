@@ -63,6 +63,7 @@ Class M_pertanyaan extends CI_Model
 
     public function getAll() //untuk mendapatkan semua data 
     {
+        $this->db->join("gejala","gejala.id_gejala = pertanyaan.id_gejala");
         return $this->db->get($this->_table)->result();
     }
 
@@ -77,7 +78,12 @@ Class M_pertanyaan extends CI_Model
         // $this->id_gejala = uniqid();
         $this->kode_pertanyaan = $post["kode_pertanyaan"];
         $this->nama_pertanyaan = $post["nama_pertanyaan"];
-        $this->nama_pertanyaan = $post["nama_pertanyaan"];
+        $this->jawaban_sangat_yakin = $post["jawaban_sangat_yakin"];
+        $this->jawaban_yakin = $post["jawaban_yakin"];
+        $this->jawaban_cukup_yakin = $post["jawaban_cukup_yakin"];
+        $this->jawaban_sedikit_yakin = $post["jawaban_sedikit_yakin"];
+        $this->jawaban_kurang_yakin = $post["jawaban_kurang_yakin"];
+        $this->jawaban_tidak_yakin = $post["jawaban_tidak_yakin"];
         return $this->db->insert($this->_table,$this);
     }   
 
@@ -87,6 +93,12 @@ Class M_pertanyaan extends CI_Model
         $this->id_pertanyaan = $post["id_pertanyaan"];
         $this->kode_pertanyaan = $post["kode_pertanyaan"];
         $this->nama_pertanyaan = $post["nama_pertanyaan"];
+        $this->jawaban_sangat_yakin = $post["jawaban_sangat_yakin"];
+        $this->jawaban_yakin = $post["jawaban_yakin"];
+        $this->jawaban_cukup_yakin = $post["jawaban_cukup_yakin"];
+        $this->jawaban_sedikit_yakin = $post["jawaban_sedikit_yakin"];
+        $this->jawaban_kurang_yakin = $post["jawaban_kurang_yakin"];
+        $this->jawaban_tidak_yakin = $post["jawaban_tidak_yakin"];
         return $this->db->update($this->_table,$this,array('id_pertanyaan' => $post['id_pertanyaan']));
     }
 

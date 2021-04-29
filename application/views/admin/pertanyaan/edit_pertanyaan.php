@@ -137,6 +137,24 @@
                                             </div>
                                         </div>
                                         <br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                            <div class="form-group-inner">
+                                            <label for="nama_gejala" class="pull-left">Nama Gejala</label>
+                                            <select class="nama_gejala" name="nama_gejala" style="width: 100%;" required>
+                                                <option value="">-Pilih-</option>
+                                                <?php
+                                                    $no=0;
+                                                    foreach ($kat->result_array() as $i) :
+                                                    $no++;
+                                                    $kategori_nama=$i['kategori_nama'];
+                                                ?>
+                                                <option value="<?php echo $kategori_id;?>"><?php echo $kategori_nama;?></option>
+                                                <?php endforeach;?>
+                                            </select>
+                                            </div>
+                                            </div>
+                                        </div>
                                         <div class="row mt-3">
                                             <div class="col-md-4">
                                                 <a href="<?php echo base_url() . 'index.php/admin/pertanyaan' ?>" class=" btn btn-danger btn-sm"></i>Batal</a>

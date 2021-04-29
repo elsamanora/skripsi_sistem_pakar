@@ -28,7 +28,7 @@
                                     <!-- Hero-btn -->
                                     <div class="hero__btn">
                                         <!-- <a href="industries.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay=".8s">Learn More</a> -->
-                                        <a href="industries.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay=".8s">Mulai Konsultasi</a>
+                                        <a href="<?= base_url() . 'member/Form_data_user' ?>" class="btn hero-btn" data-animation="fadeInLeft" data-delay=".8s">Mulai Konsultasi</a>
                                         <!-- <a href="industries.html" class="btn border-btn ml-15" data-animation="fadeInRight" data-delay="1.0s">Mulai Konsultasi</a> -->
                                     </div>
                                 </div>
