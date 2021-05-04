@@ -90,7 +90,7 @@
                 <!-- End Hasil Konstultasi-->
 
                 <!-- Start Penanganan -->
-                <div class="row">
+                <!-- <div class="row">
                     <div>
                         <label><b>Penanganan : </b></label>
                     </div>
@@ -108,7 +108,7 @@
                             yang di derita </td>
                     </tbody>
                 </table>
-                </div><br>
+                </div><br> -->
                 <!-- Hasil Penanganan-->
             </div>
         </div>

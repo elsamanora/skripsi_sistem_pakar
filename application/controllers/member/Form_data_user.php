@@ -31,4 +31,9 @@ class Form_data_user extends CI_Controller
     }
 
 
+    public function hasil() //menampilkan form hasil konsultasi
+    {
+        $this->load->view("member/konsultasi/hasil_konsultasi");
+    }
+
 }

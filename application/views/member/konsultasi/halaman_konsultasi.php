@@ -68,47 +68,9 @@
                             </div>
                     </div><br>
                 <?php } ?>
-                
-                <script type="text/javascript">
-                    // $(document).ready(function() {
-
-                    //     var gejala1 = $('#gejala1');
-                    //     var gejala2 = $('#gejala2');
-                        
-                    //     var tiga_enam = $('#tiga_enam');
-                    //     if(tiga_enam.checked){
-                    //         console.log('TEST');
-                    //         gejala2.removeAttr('hidden');
-                    //     }else{
-                    //         console.log('TOLOL');
-                    //     }
-                    // });
-                    // var gejala1 = $('#gejala1');
-                    // var gejala2 = $('#gejala2');
-                    // var gejala3 = $('#gejala3');
-                    // var tiga_enam = $('#tiga_enam');
-                    // $('#tiga_enam').click(function(event) {
-                    //     gejala2.removeAttr('hidden');
-                    //     $('#ya').click(function(event) {
-                    //         gejala3.removeAttr('hidden');
-                    //     });
-                    // });
-                    
-                    // function rowHide() {
-                        
-                    //     var gejala1 = $('#gejala1');
-                    //     var gejala2 = $('#gejala2');
-                    //     var tiga_enam = $('#tiga_enam');
-                    //     if(tiga_enam.checked){
-                    //         console.log('TEST');
-                    //         gejala2.removeAttr('hidden');
-                    //     }else{
-                    //         console.log('TOLOL');
-                    //     }
-
-                    // }
-
-                </script>
+                <div>
+                    <a href="" class="btn btn-info" style="margin-bottom:10px;"></i>Selesai</a>
+                </div>
             </div>
         </div>
     </main>
