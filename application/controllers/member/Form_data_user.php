@@ -9,6 +9,7 @@ class Form_data_user extends CI_Controller
         parent::__construct();
         $this->load->model("member/M_form_data_user");
         $this->load->model("member/M_Pertanyaan");
+        $this->load->model("ModelPerhitungan");
         $this->load->library('form_validation'); //memvalidasi input pada method tambah dan edit
     }
 
@@ -30,6 +31,23 @@ class Form_data_user extends CI_Controller
         $this->load->view("member/konsultasi/halaman_konsultasi");
     }
 
+    public function insert_jawaban()
+    {
+        $data_batch = array();
+        $user = "1";
+        foreach ($this->M_Pertanyaan->get_pertanyaan()->result() as $value){ 
+            $id_pertanyaan = $value->id_pertanyaan;
+            $jawaban = $this->input->post("jawaban".$id_pertanyaan);
+            $data = array(
+                "id_pertanyaan" => $id_pertanyaan,
+                "id_user"       => $user,
+                "jawaban_pasien"=> $jawaban,
+                "nilai"         => $jawaban
+            );
+            array_push($data_batch, $data);
+        }
+        $this->db->insert_batch("jawaban_pasien", $data_batch);
+    }
 
     public function hasil() //menampilkan form hasil konsultasi
     {

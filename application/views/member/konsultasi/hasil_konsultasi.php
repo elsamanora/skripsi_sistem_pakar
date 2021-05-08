@@ -38,6 +38,186 @@
         <br><br>
         <div class="about-me">
             <div class="container">
+            <div class="row">
+                    <div>
+                        <label><b>Perhitungan dilakukan disetiap gejala yang dialami pd masing2 rule : </b></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                    <table class="table table-striped">
+                        <thead class="table-danger">
+                            <tr>
+                            <th>R1</th>
+                            <th>User</th>
+                            <th>Pakar</th>
+                            <th>Hasil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <?php $arDialami = array();?>
+                            <?php $arR1 = array();
+                             foreach($this->ModelPerhitungan->get_pengetahuan("DEMAM BERDARAH")->result() as $DB) { ?>
+                                <tr>
+                                    <td>
+                                        <?php 
+                                            $gejala = $this->ModelPerhitungan->get_nilai_user("1", $DB->kode_pengetahuan)->row_array();
+                                            @$r = $gejala["nilai"] * $DB->nilai_cf_pakar;
+                                            array_push($arR1, $r);
+                                            echo $gejala["kode_gejala"];
+                                            if (@$r > 0) {
+                                                array_push($arDialami, $gejala["kode_gejala"]);
+                                            }
+                                        ?>
+                                    </td>
+                                    <td><?php echo $gejala["nilai"];?></td>
+                                    <td><?php echo $DB->nilai_cf_pakar;?></td>
+                                    <td><?php echo @$r;?></td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="col-4">
+                    <table class="table table-striped">
+                        <thead class="table-danger">
+                            <tr>
+                            <th>R2</th>
+                            <th>User</th>
+                            <th>Pakar</th>
+                            <th>Hasil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php 
+                            $arR2 = array();
+                            foreach($this->ModelPerhitungan->get_pengetahuan("MALARIA")->result() as $DB) { ?>
+                                <tr>
+                                    <td>
+                                        <?php 
+                                            $gejala = $this->ModelPerhitungan->get_nilai_user("1", $DB->kode_pengetahuan)->row_array();
+                                            @$r = $gejala["nilai"] * $DB->nilai_cf_pakar;
+                                            array_push($arR2, $r);
+                                            echo $gejala["kode_gejala"];
+                                            if (@$r > 0) {
+                                                array_push($arDialami, $gejala["kode_gejala"]);
+                                            }
+                                        ?>
+                                    </td>
+                                    <td><?php echo $gejala["nilai"];?></td>
+                                    <td><?php echo $DB->nilai_cf_pakar;?></td>
+                                    <td><?php echo @$r;?></td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="col-4">
+                    <table class="table table-striped">
+                        <thead class="table-danger">
+                            <tr>
+                            <th>R3</th>
+                            <th>User</th>
+                            <th>Pakar</th>
+                            <th>Hasil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php 
+                            $arR3 = array();
+                            foreach($this->ModelPerhitungan->get_pengetahuan("THYPOID")->result() as $DB) { ?>
+                                <tr>
+                                <td>
+                                        <?php 
+                                            $gejala = $this->ModelPerhitungan->get_nilai_user("1", $DB->kode_pengetahuan)->row_array();
+                                            @$r = $gejala["nilai"] * $DB->nilai_cf_pakar;
+                                            array_push($arR3, $r);
+                                            echo $gejala["kode_gejala"];
+                                            if (@$r > 0) {
+                                                array_push($arDialami, $gejala["kode_gejala"]);
+                                            }
+                                        ?>
+                                    </td>
+                                    <td><?php echo $gejala["nilai"];?></td>
+                                    <td><?php echo $DB->nilai_cf_pakar;?></td>
+                                    <td><?php echo @$r;?></td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <div class="col-4">
+                    <table class="table table-striped">
+                        <thead class="table-danger">
+                            <tr>
+                            <th colspan="2">CFC(R1)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php $cfcr1 = $arR1[0]+$arR1[1] * (1-$arR1[0]); ?>
+                            <tr>
+                                <td><?php echo $cfcr1;?></td>
+                            </tr>
+                            <?php 
+                                for ($i=2; $i < sizeof($arR1); $i++) { 
+                                    $cfcr = $cfcr1 + $arR1[$i] * (1-$cfcr1);
+                                    $cfcr1 = $cfcr; ?>
+                                <tr>
+                                    <td><?php echo $cfcr1;?></td>
+                                </tr>
+                                <?php } ?>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="col-4">
+                    <table class="table table-striped">
+                        <thead class="table-danger">
+                            <tr>
+                            <th colspan="2">CFC(R2)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php $cfcr2 = $arR2[0]+$arR2[1] * (1-$arR2[0]); ?>
+                            <tr>
+                                <td><?php echo $cfcr2;?></td>
+                            </tr>
+                            <?php 
+                                for ($i=2; $i < sizeof($arR2); $i++) { 
+                                    $cfcr = $cfcr2 + $arR2[$i] * (1-$cfcr2);
+                                    $cfcr2 = $cfcr; ?>
+                                <tr>
+                                    <td><?php echo $cfcr2;?></td>
+                                </tr>
+                                <?php } ?>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="col-4">
+                    <table class="table table-striped">
+                        <thead class="table-danger">
+                            <tr>
+                            <th colspan="2">CFC(R3)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php $cfcr3 = $arR3[0]+$arR3[1] * (1-$arR3[0]); ?>
+                            <tr>
+                                <td><?php echo $cfcr3;?></td>
+                            </tr>
+                            <?php 
+                                for ($i=2; $i < sizeof($arR3); $i++) { 
+                                    $cfcr = $cfcr3 + $arR3[$i] * (1-$cfcr3);
+                                    $cfcr3 = $cfcr; ?>
+                                <tr>
+                                    <td><?php echo $cfcr3;?></td>
+                                </tr>
+                                <?php } ?>
+                        </tbody>
+                    </table>
+                    </div>
+                </div><br>
+
                 <div class="row">
                     <div>
                         <label><b>Gejala yang dialami : </b></label>
@@ -53,10 +233,13 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <?php for ($i=0; $i < sizeof($arDialami); $i++) { ?>
                         <tr>
-                        <th scope="row">1</th>
-                        <td>G01</td>
-                        <td>Panas tinggi mendadak dengan suhu 39 derajat</td>
+                        <th scope="row"><?php echo $i + 1;?></th>
+                        <td><?php echo $arDialami[$i]; ?></td>
+                        <td><?php echo $this->ModelPerhitungan->get_gejala($arDialami[$i])->row_array()["nama_gejala"]; ?></td>
+                        <tr>
+                    <?php } ?>
                     </tbody>
                 </table>
                 </div><br>
@@ -79,37 +262,37 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <?php 
+                    // if($cfcr1 >= $cfcr2 && $cfcr1 >= $cfcr3){ 
+                        ?>
                         <tr>
                         <th scope="row">1</th>
                         <td>P01</td>
                         <td>Demam Berdarah</td>
-                        <td>90%</td>
+                        <td><?php echo $cfcr1 * 100;?>%</td>
+                    <?php 
+                    // }elseif($cfcr2 >= $cfcr3 && $cfcr2 >= $cfcr1){ 
+                    ?>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>P02</td>
+                        <td>MALARIA</td>
+                        <td><?php echo $cfcr2 * 100;?>%</td>
+                    <?php 
+                    // }else{ 
+                        ?>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>P03</td>
+                        <td>TYPHOID</td>
+                        <td><?php echo $cfcr3 * 100;?>%</td>
+                    <?php 
+                    // } 
+                    ?>
                     </tbody>
                 </table>
                 </div><br>
                 <!-- End Hasil Konstultasi-->
-
-                <!-- Start Penanganan -->
-                <!-- <div class="row">
-                    <div>
-                        <label><b>Penanganan : </b></label>
-                    </div>
-                </div>
-                <div class="row">
-                <table class="table table-striped danger">
-                    <thead class="table-danger"> 
-                        <tr>
-                        <th>Penanganan</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td>Kompres dengan air hangat, lalu apabila panas semakin tinggi lekas lakukan tes  sampel darah untuk memastikan penyakit
-                            yang di derita </td>
-                    </tbody>
-                </table>
-                </div><br> -->
-                <!-- Hasil Penanganan-->
             </div>
         </div>
     </main>

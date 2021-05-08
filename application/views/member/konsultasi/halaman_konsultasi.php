@@ -36,43 +36,45 @@
         <!-- Hero End -->
         <!-- About Me Start -->
         <br><br>
-        <div class="about-me">
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <label><b>Pilih Gejala Sesuai Dengan Tingkat Keyakinan Yang Dirasakan :</b></label>
-                    </div>
-                </div><br>
-                <?php $no=1; foreach ($this->M_Pertanyaan->get_pertanyaan()->result() as $value){ ?>
-                    <div class="row" id="gelaja1">
-                    <div>
-                        <label><?php echo $no++;?>. <?php echo $value->nama_pertanyaan;?></label><br>
-                            <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="1">
-                            <label><?php echo $value->jawaban_sangat_yakin;?></label>
-                            <br>
-                            <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0.8">
-                            <label><?php echo $value->jawaban_yakin;?></label>
-                            <br>
-                            <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0.6">
-                            <label><?php echo $value->jawaban_cukup_yakin;?></label>
-                            <br>
-                            <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0.4">
-                            <label><?php echo $value->jawaban_sedikit_yakin;?></label>
-                            <br>
-                            <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0.2">
-                            <label><?php echo $value->jawaban_kurang_yakin;?></label>
-                            <br>
-                            <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0">
-                            <label><?php echo $value->jawaban_tidak_yakin;?></label>
-                            <br>
-                            </div>
+        <form action="<?php echo base_url()?>member/form_data_user/insert_jawaban" method="post">
+            <div class="about-me">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <label><b>Pilih Gejala Sesuai Dengan Tingkat Keyakinan Yang Dirasakan :</b></label>
+                        </div>
                     </div><br>
-                <?php } ?>
-                <div>
-                    <a href="" class="btn btn-info" style="margin-bottom:10px;"></i>Selesai</a>
+                    <?php $no=1; foreach ($this->M_Pertanyaan->get_pertanyaan()->result() as $value){ ?>
+                        <div class="row" id="gelaja1">
+                        <div>
+                            <label><?php echo $no++;?>. <?php echo $value->nama_pertanyaan;?></label><br>
+                                <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="1">
+                                <label><?php echo $value->jawaban_sangat_yakin;?></label>
+                                <br>
+                                <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0.8">
+                                <label><?php echo $value->jawaban_yakin;?></label>
+                                <br>
+                                <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0.6">
+                                <label><?php echo $value->jawaban_cukup_yakin;?></label>
+                                <br>
+                                <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0.4">
+                                <label><?php echo $value->jawaban_sedikit_yakin;?></label>
+                                <br>
+                                <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0.2">
+                                <label><?php echo $value->jawaban_kurang_yakin;?></label>
+                                <br>
+                                <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0">
+                                <label><?php echo $value->jawaban_tidak_yakin;?></label>
+                                <br>
+                                </div>
+                        </div><br>
+                    <?php } ?>
+                    <div>
+                        <button type="submit" class="btn btn-info" style="margin-bottom:10px;"></i>Selesai</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
     </main>
     <br>
     <footer>
