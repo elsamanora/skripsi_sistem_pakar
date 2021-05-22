@@ -98,7 +98,8 @@
                                                     <th>No</th>
                                                     <th>Kode Gejala Yang Dialami</th>
                                                     <th>Gejala Yang Dialami</th>
-                                                    <th>Jawaban Konsultasi</th>
+                                                    <th>Hasil Konsultasi Penyakit</th>
+                                                    <th>Nilai Kepastian</th>
                                                 </tr>
                                             </thead>
                                             <tbody align="center"> 
@@ -111,7 +112,10 @@
                                                         Demam 
                                                     </td>
                                                     <td>
-                                                        Ya, saya sangat demam
+                                                        Demam Berdarah
+                                                    </td>
+                                                    <td>
+                                                        89 % 
                                                     </td>
                                                 </tr>
                                             </tbody>
