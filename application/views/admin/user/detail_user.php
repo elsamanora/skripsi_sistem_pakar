@@ -59,7 +59,6 @@
                                                     <th>Jenis Kelamin</th>
                                                     <th>alamat</th>
                                                     <th>No Telepon</th>
-                                                    <th>Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody align="center">
@@ -82,10 +81,6 @@
                                                     </td>
                                                     <td>
                                                         <?php echo $data_user->no_telp ?>
-                                                    </td>
-                                                    <td>
-                                                    <a href="<?php echo base_url() . 'index.php/admin/user/detail_user' ?>" class=" btn btn-warning" style="margin-bottom:10px;"></i>Detail</a>
-                                                        <a href="" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
                                                     </td>
                                                 </tr>
                                                 <?php endforeach ?>

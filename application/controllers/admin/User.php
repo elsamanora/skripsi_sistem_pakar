@@ -16,4 +16,9 @@ class User extends CI_Controller
         $this->load->view("admin/user/data_user",$data);
     }
 
+    public function detail_user()
+    {
+        $this->load->view("admin/user/detail_user");
+    }
+
 }

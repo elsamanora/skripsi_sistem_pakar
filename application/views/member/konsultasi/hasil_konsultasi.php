@@ -258,7 +258,7 @@
                         <th scope="col">No</th>
                         <th scope="col">Kode Penyakit</th>
                         <th scope="col">Nama Penyakit</th>
-                        <th scope="col">NIlai Kepastian CF</th>
+                        <th scope="col">Nilai Kepastian CF</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -276,7 +276,7 @@
                         <tr>
                         <th scope="row">1</th>
                         <td>P02</td>
-                        <td>MALARIA</td>
+                        <td>Malaria</td>
                         <td><?php echo $cfcr2 * 100;?>%</td>
                     <?php 
                     // }else{ 
@@ -284,7 +284,7 @@
                         <tr>
                         <th scope="row">1</th>
                         <td>P03</td>
-                        <td>TYPHOID</td>
+                        <td>Thypoid</td>
                         <td><?php echo $cfcr3 * 100;?>%</td>
                     <?php 
                     // } 
