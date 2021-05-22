@@ -43,7 +43,49 @@
                             <div class="card shadow mb-4">
                                 <!-- Datatable -->
                                 <div class="card-header">
-                                    Data User
+                                    Detail Data User
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Nama : </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Elsa Manora Ramadania</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Jenis Kelamin : </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Perempuan</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Alamat :</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Jember</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Usia : </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>20 Tahun</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Nomor Telepon : </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>087678987678</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <!-- button -->
@@ -54,36 +96,24 @@
                                             <thead align="center">
                                                 <tr>
                                                     <th>No</th>
-                                                    <th>Nama User</th>
-                                                    <th>Umur</th>
-                                                    <th>Jenis Kelamin</th>
-                                                    <th>alamat</th>
-                                                    <th>No Telepon</th>
+                                                    <th>Kode Gejala Yang Dialami</th>
+                                                    <th>Gejala Yang Dialami</th>
+                                                    <th>Jawaban Konsultasi</th>
                                                 </tr>
                                             </thead>
-                                            <tbody align="center">
-                                            <?php 
-                                            $no = 1;
-                                            foreach ($user as $data_user): ?> 
+                                            <tbody align="center"> 
                                                 <tr>
-                                                     <td><?php echo $no++ ?></td>
+                                                    <td>1</td>
                                                     <td>
-                                                        <?php echo $data_user->nama_user ?>
+                                                        G01                                                   
                                                     </td>
                                                     <td>
-                                                        <?php echo $data_user->umur ?>
+                                                        Demam 
                                                     </td>
                                                     <td>
-                                                        <?php echo $data_user->jenis_kelamin ?>
-                                                    </td>
-                                                    <td>
-                                                        <?php echo $data_user->alamat ?>
-                                                    </td>
-                                                    <td>
-                                                        <?php echo $data_user->no_telp ?>
+                                                        Ya, saya sangat demam
                                                     </td>
                                                 </tr>
-                                                <?php endforeach ?>
                                             </tbody>
                                         </table>
                                     </div>
