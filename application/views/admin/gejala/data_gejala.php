@@ -73,7 +73,7 @@
                                                     </td>
                                                     <td>
                                                         <a href="<?php echo base_url() . 'index.php/admin/gejala/edit'?>/<?=$data_gejala->id_gejala?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
-                                                        <a onclick="return confirm('Apakah anda yakin ?');" href="<?php echo base_url() . 'index.php/admin/Gejala/delete'?>/<?=$data_gejala->id_gejala?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                        <a onclick="return confirm('Apakah anda yakin ingin menghapus data gejala berikut ?');" href="<?php echo base_url() . 'index.php/admin/Gejala/delete'?>/<?=$data_gejala->id_gejala?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
                                                     </td>
                                                 </tr>
                                                 <?php endforeach ?>

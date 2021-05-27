@@ -101,7 +101,7 @@
                                                     </td>
                                                     <td>
                                                         <a href="<?php echo base_url() . 'index.php/admin/pertanyaan/edit'?>/<?=$data_pertanyaan->id_pertanyaan?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
-                                                        <a onclick="return confirm('Apakah anda yakin ingin menghapus data tersebut ?');" href="<?php echo base_url() . 'index.php/admin/Pertanyaan/delete'?>/<?=$data_pertanyaan->id_pertanyaan?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                        <a onclick="return confirm('Apakah anda yakin ingin menghapus data pertanyaan berikut ?');" href="<?php echo base_url() . 'index.php/admin/Pertanyaan/delete'?>/<?=$data_pertanyaan->id_pertanyaan?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
                                                     </td>
                                                 </tr>
                                                 <?php endforeach ?>

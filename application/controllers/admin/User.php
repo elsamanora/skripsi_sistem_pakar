@@ -21,4 +21,12 @@ class User extends CI_Controller
         $this->load->view("admin/user/detail_user");
     }
 
+    public function delete($id=null)
+    {
+        if (!isset($id)) show_404();
+        
+        if ($this->M_user->delete($id)) {
+            redirect(site_url('admin/user'));
+        }
+    }
 }

@@ -69,7 +69,7 @@
                                                     <td><?php echo $data_aturan->nama_aturan ?></td>
                                                     <td>
                                                         <a href="<?php echo base_url() . 'index.php/admin/aturan/edit/'.$data_aturan->id_aturan ?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
-                                                        <a onclick="return confirm('Apakah anda yakin ?');" href="<?php echo base_url() . 'index.php/admin/Gejala/delete'?>/<?=$data_aturan->id_aturan?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                        <a onclick="return confirm('Apakah anda yakin ingin menghapus data aturan berikut ?');" href="<?php echo base_url() . 'index.php/admin/Gejala/delete'?>/<?=$data_aturan->id_aturan?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
                                                     </td>
                                                 </tr>
                                                 <?php endforeach ?>
