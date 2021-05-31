@@ -7,6 +7,9 @@ class User extends CI_Controller
     {
         parent::__construct();
         $this->load->model("admin/M_user");
+        $this->load->model("member/M_form_data_user");
+        $this->load->model("member/M_Pertanyaan");
+        $this->load->model("ModelPerhitungan");
         $this->load->library('form_validation');
     }
 
@@ -16,7 +19,7 @@ class User extends CI_Controller
         $this->load->view("admin/user/data_user",$data);
     }
 
-    public function detail_user()
+    public function detail_user($id_user)
     {
         $this->load->view("admin/user/detail_user");
     }

@@ -53,6 +53,8 @@ Class M_form_data_user extends CI_Model
         $this->alamat = $post["alamat"];
         $this->no_telp = $post["no_telp"];
         $this->db->insert($this->_table,$this);
+        $id_user = $this->db->insert_id();
+        $_SESSION['id_user'] = $id_user;
     }   
 
 }

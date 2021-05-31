@@ -1,3 +1,7 @@
+<?php
+    $id_user = $_SESSION['id_user'];
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -61,7 +65,7 @@
                                 <tr>
                                     <td>
                                         <?php 
-                                            $gejala = $this->ModelPerhitungan->get_nilai_user("1", $DB->kode_pengetahuan)->row_array();
+                                            $gejala = $this->ModelPerhitungan->get_nilai_user($id_user, $DB->kode_pengetahuan)->row_array();
                                             @$r = $gejala["nilai"] * $DB->nilai_cf_pakar;
                                             array_push($arR1, $r);
                                             echo $gejala["kode_gejala"];
@@ -95,7 +99,7 @@
                                 <tr>
                                     <td>
                                         <?php 
-                                            $gejala = $this->ModelPerhitungan->get_nilai_user("1", $DB->kode_pengetahuan)->row_array();
+                                            $gejala = $this->ModelPerhitungan->get_nilai_user($id_user, $DB->kode_pengetahuan)->row_array();
                                             @$r = $gejala["nilai"] * $DB->nilai_cf_pakar;
                                             array_push($arR2, $r);
                                             echo $gejala["kode_gejala"];
@@ -129,7 +133,7 @@
                                 <tr>
                                 <td>
                                         <?php 
-                                            $gejala = $this->ModelPerhitungan->get_nilai_user("1", $DB->kode_pengetahuan)->row_array();
+                                            $gejala = $this->ModelPerhitungan->get_nilai_user($id_user, $DB->kode_pengetahuan)->row_array();
                                             @$r = $gejala["nilai"] * $DB->nilai_cf_pakar;
                                             array_push($arR3, $r);
                                             echo $gejala["kode_gejala"];
@@ -157,14 +161,14 @@
                         <tbody>
                             <?php $cfcr1 = $arR1[0]+$arR1[1] * (1-$arR1[0]); ?>
                             <tr>
-                                <td><?php echo $cfcr1;?></td>
+                                <td><?php echo round($cfcr1, 2);?></td>
                             </tr>
                             <?php 
                                 for ($i=2; $i < sizeof($arR1); $i++) { 
                                     $cfcr = $cfcr1 + $arR1[$i] * (1-$cfcr1);
                                     $cfcr1 = $cfcr; ?>
                                 <tr>
-                                    <td><?php echo $cfcr1;?></td>
+                                    <td><?php echo round($cfcr1, 2);?></td>
                                 </tr>
                                 <?php } ?>
                         </tbody>
@@ -180,14 +184,14 @@
                         <tbody>
                             <?php $cfcr2 = $arR2[0]+$arR2[1] * (1-$arR2[0]); ?>
                             <tr>
-                                <td><?php echo $cfcr2;?></td>
+                                <td><?php echo round($cfcr2,2);?></td>
                             </tr>
                             <?php 
                                 for ($i=2; $i < sizeof($arR2); $i++) { 
                                     $cfcr = $cfcr2 + $arR2[$i] * (1-$cfcr2);
                                     $cfcr2 = $cfcr; ?>
                                 <tr>
-                                    <td><?php echo $cfcr2;?></td>
+                                    <td><?php echo round($cfcr2, 2);?></td>
                                 </tr>
                                 <?php } ?>
                         </tbody>
@@ -203,14 +207,14 @@
                         <tbody>
                             <?php $cfcr3 = $arR3[0]+$arR3[1] * (1-$arR3[0]); ?>
                             <tr>
-                                <td><?php echo $cfcr3;?></td>
+                                <td><?php echo round($cfcr3, 2);?></td>
                             </tr>
                             <?php 
                                 for ($i=2; $i < sizeof($arR3); $i++) { 
                                     $cfcr = $cfcr3 + $arR3[$i] * (1-$cfcr3);
                                     $cfcr3 = $cfcr; ?>
                                 <tr>
-                                    <td><?php echo $cfcr3;?></td>
+                                    <td><?php echo round($cfcr3, 2);?></td>
                                 </tr>
                                 <?php } ?>
                         </tbody>
@@ -269,7 +273,7 @@
                         <th scope="row">1</th>
                         <td>P01</td>
                         <td>Demam Berdarah</td>
-                        <td><?php echo $cfcr1 * 100;?>%</td>
+                        <td><?php echo round($cfcr1 * 100, 2);?>%</td>
                     <?php 
                     // }elseif($cfcr2 >= $cfcr3 && $cfcr2 >= $cfcr1){ 
                     ?>
@@ -277,7 +281,7 @@
                         <th scope="row">1</th>
                         <td>P02</td>
                         <td>Malaria</td>
-                        <td><?php echo $cfcr2 * 100;?>%</td>
+                        <td><?php echo round($cfcr2 * 100,2);?>%</td>
                     <?php 
                     // }else{ 
                         ?>
@@ -285,7 +289,7 @@
                         <th scope="row">1</th>
                         <td>P03</td>
                         <td>Thypoid</td>
-                        <td><?php echo $cfcr3 * 100;?>%</td>
+                        <td><?php echo round($cfcr3 * 100, 2);?>%</td>
                     <?php 
                     // } 
                     ?>

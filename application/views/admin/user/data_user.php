@@ -84,7 +84,7 @@
                                                         <?php echo $data_user->no_telp ?>
                                                     </td>
                                                     <td>
-                                                    <a href="<?php echo base_url() . 'index.php/admin/user/detail_user' ?>" class=" btn btn-warning" style="margin-bottom:10px;"></i>Detail</a>
+                                                    <a href="<?php echo base_url() . 'index.php/admin/user/detail_user/'.$data_user->id_user ?>" class=" btn btn-warning" style="margin-bottom:10px;"></i>Detail</a>
                                                     <a onclick="return confirm('Apakah anda yakin ingin menghapus data user berikut ?');" href="<?php echo base_url() . 'index.php/admin/User/delete'?>/<?=$data_user->id_user?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
                                                     </td>
                                                 </tr>

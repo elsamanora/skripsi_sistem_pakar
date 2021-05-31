@@ -34,7 +34,7 @@ class Form_data_user extends CI_Controller
     public function insert_jawaban()
     {
         $data_batch = array();
-        $user = "1";
+        $user = $_SESSION['id_user'] ;
         foreach ($this->M_Pertanyaan->get_pertanyaan()->result() as $value){ 
             $id_pertanyaan = $value->id_pertanyaan;
             $jawaban = $this->input->post("jawaban".$id_pertanyaan);
@@ -46,7 +46,9 @@ class Form_data_user extends CI_Controller
             );
             array_push($data_batch, $data);
         }
-        $this->db->insert_batch("jawaban_pasien", $data_batch);
+        if($this->db->insert_batch("jawaban_pasien", $data_batch)){
+            redirect("Member/Form_data_user/hasil");
+        }
     }
 
     public function hasil() //menampilkan form hasil konsultasi

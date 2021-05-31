@@ -48,6 +48,12 @@ Class M_user extends CI_Model
         return $this->db->get($this->_table)->result();
     }
 
+    public function getDetail($id) //untuk mendapatkan semua data 
+    {
+        $this->db->where("id_user", $id);
+        return $this->db->get($this->_table);
+    }
+
     public function delete($id)
     {
         return $this->db->delete($this->_table,array("id_user"=>$id));
