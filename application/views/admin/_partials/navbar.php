@@ -33,10 +33,10 @@
 <div class="app-header__content">
     <div class="app-header-left">
         <div class="search-wrapper">
-            <div class="input-holder">
+            <!-- <div class="input-holder">
                 <input type="text" class="search-input" placeholder="Cari disini .....">
                 <button class="search-icon"><span></span></button>
-            </div>
+            </div> -->
             <!-- button close seach -->
             <button class="close"></button>
         </div>
@@ -49,7 +49,7 @@
                     <div class="widget-content-left">
                         <div class="btn-group">
                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                <img width="42" class="rounded-circle" src="<?php echo base_url(); ?>/assets/admin/images/avatars/1.jpg" alt="">
+                                <img width="42" class="rounded-circle" src="<?php echo base_url(); ?>/assets/admin/images/avatars/els.jpg" alt="">
                                 <i class="fa fa-angle-down ml-2 opacity-8"></i>
                             </a>
                             <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
