@@ -142,14 +142,10 @@
                                             <label for="nama_gejala" class="pull-left">Nama Gejala</label>
                                             <select class="nama_gejala" name="nama_gejala" style="width: 100%;" required>
                                                 <option value="">-Pilih-</option>
-                                                <?php
-                                                    $no=0;
-                                                    foreach ($kat->result_array() as $i) :
-                                                    $no++;
-                                                    $kategori_nama=$i['kategori_nama'];
-                                                ?>
-                                                <option value="<?php echo $kategori_id;?>"><?php echo $kategori_nama;?></option>
-                                                <?php endforeach;?>
+                                                <?php 
+                                                    foreach ($gejala as $key => $g) : ?>
+                                                    <option value="<?= $g->id_gejala ?>"><?= $g->nama_gejala ?></option>
+                                                <?php endforeach; ?>
                                             </select>
                                             </div>
                                             </div>

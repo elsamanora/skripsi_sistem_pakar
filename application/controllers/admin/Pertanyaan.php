@@ -18,7 +18,9 @@ class Pertanyaan extends CI_Controller
 
     public function tambah()
     {
+        $this->load->model("admin/M_gejala");
         $pertanyaan = $this->M_pertanyaan;
+        $data['gejala'] = $this->M_gejala->getAll();
         $validation = $this->form_validation;
         $validation->set_rules($pertanyaan->rules());
 
@@ -26,14 +28,16 @@ class Pertanyaan extends CI_Controller
             $pertanyaan->save(); 
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
-        $this->load->view("admin/pertanyaan/tambah_pertanyaan");
+        $this->load->view("admin/pertanyaan/tambah_pertanyaan", $data);
     }
 
     public function edit($id = null)
     {
+        $this->load->model("admin/M_gejala");
         if (!isset($id)) redirect('admin/pertanyaan');
        
         $pertanyaan = $this->M_pertanyaan;
+        $data['gejala'] = $this->M_gejala->getAll();
         $validation = $this->form_validation;
         $validation->set_rules($pertanyaan->rules());
 

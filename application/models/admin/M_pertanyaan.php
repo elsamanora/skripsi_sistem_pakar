@@ -5,6 +5,7 @@ Class M_pertanyaan extends CI_Model
     private $_table = "pertanyaan"; //nama tabel
     // nama kolom di tabel, harus sama huruf besar dan huruf kecilnya!
     public $id_pertanyaan;
+    public $id_gejala;
     public $kode_pertanyaan;
     public $nama_pertanyaan;
     public $jawaban_sangat_yakin;
@@ -84,6 +85,7 @@ Class M_pertanyaan extends CI_Model
         $this->jawaban_sedikit_yakin = $post["jawaban_sedikit_yakin"];
         $this->jawaban_kurang_yakin = $post["jawaban_kurang_yakin"];
         $this->jawaban_tidak_yakin = $post["jawaban_tidak_yakin"];
+        $this->id_gejala = $post['nama_gejala'];
         return $this->db->insert($this->_table,$this);
     }   
 
@@ -99,6 +101,7 @@ Class M_pertanyaan extends CI_Model
         $this->jawaban_sedikit_yakin = $post["jawaban_sedikit_yakin"];
         $this->jawaban_kurang_yakin = $post["jawaban_kurang_yakin"];
         $this->jawaban_tidak_yakin = $post["jawaban_tidak_yakin"];
+        $this->id_gejala = $post['nama_gejala'];
         return $this->db->update($this->_table,$this,array('id_pertanyaan' => $post['id_pertanyaan']));
     }
 
