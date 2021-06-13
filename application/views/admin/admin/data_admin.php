@@ -29,10 +29,10 @@
                         <div class="page-title-wrapper">
                             <div class="page-title-heading">
                                 <div class="page-title-icon">
-                                    <i class="fa fa-users"></i>
+                                    <i class="fa fa-user fa-lg"></i>
                                 </div>
                                 <div>
-                                    User
+                                    Admin
                                 </div>
                             </div>
                         </div>
@@ -43,49 +43,36 @@
                             <div class="card shadow mb-4">
                                 <!-- Datatable -->
                                 <div class="card-header">
-                                    Data User
+                                    Data Admin
                                 </div>
                                 <div class="card-body">
                                     <!-- button -->
-                                    <!-- <a href="" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a> -->
+                                    <a href="<?php echo base_url() . 'index.php/admin/admin/tambah' ?>" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a>
                                     <!-- Table -->
                                     <div class="table-responsive">
                                         <table class="mb-0 table table-striped">
                                             <thead align="center">
                                                 <tr>
                                                     <th>No</th>
-                                                    <th>Nama User</th>
-                                                    <th>Umur</th>
-                                                    <th>Jenis Kelamin</th>
-                                                    <th>alamat</th>
-                                                    <th>No Telepon</th>
+                                                    <th>Username</th>
+                                                    <th>Password</th>
                                                     <th>Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody align="center">
                                             <?php 
                                             $no = 1;
-                                            foreach ($user as $data_user): ?> 
+                                            foreach ($admin as $data_admin): ?> 
                                                 <tr>
                                                      <td><?php echo $no++ ?></td>
                                                     <td>
-                                                        <?php echo $data_user->nama_user ?>
+                                                        <?php echo $data_admin->username ?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $data_user->umur ?>
+                                                        <?php echo $data_admin->password ?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $data_user->jenis_kelamin ?>
-                                                    </td>
-                                                    <td>
-                                                        <?php echo $data_user->alamat ?>
-                                                    </td>
-                                                    <td>
-                                                        <?php echo $data_user->no_telp ?>
-                                                    </td>
-                                                    <td>
-                                                    <a href="<?php echo base_url() . 'index.php/admin/user/detail_user/'.$data_user->id_user ?>" class=" btn btn-warning" style="margin-bottom:10px;"></i>Detail</a>
-                                                    <a onclick="return confirm('Apakah anda yakin ingin menghapus data user berikut ?');" href="<?php echo base_url() . 'index.php/admin/User/delete'?>/<?=$data_user->id_user?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                        <a href="<?php echo base_url() . 'index.php/admin/admin/edit'?>/<?=$data_admin->id_admin?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
                                                     </td>
                                                 </tr>
                                                 <?php endforeach ?>

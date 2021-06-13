@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- button -->
-                                    <!-- <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/tambah' ?>" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a> -->
+                                    <a href="<?php echo base_url() . 'index.php/admin/pengetahuan/tambah' ?>" class=" btn btn-primary btn-sm float-left" style="margin-bottom:10px;"></i> Tambah</a>
                                     <!-- Table -->
                                     <div class="table-responsive">
                                         <table class="mb-0 table table-striped">
@@ -57,7 +57,7 @@
                                                     <th>Nama Penyakit</th>
                                                     <th>Gejala</th>
                                                     <th>Nilai CF Pakar</th>
-                                                    <!-- <th>Aksi</th> -->
+                                                    <th>Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody align="center">
@@ -75,10 +75,10 @@
                                                     <td>
                                                         <?php echo $data_pengetahuan->nilai_cf_pakar ?>
                                                     </td>
-                                                    <!-- <td>
-                                                        <a href="<?php echo base_url() . 'index.php/admin/Penanganan/edit'?>/<?=$data_penanganan->id_penanganan?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
-                                                        <a onclick="return confirm('Apakah anda yakin ?');" href="<?php echo base_url() . 'index.php/admin/Penanganan/delete'?>/<?=$data_penanganan->id_penanganan?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
-                                                    </td> -->
+                                                    <td>
+                                                        <a href="<?php echo base_url() . 'index.php/admin/Pengetahuan/edit'?>/<?=$data_pengetahuan->kode_pengetahuan?>" class=" btn btn-info" style="margin-bottom:10px;"></i> Edit</a>
+                                                        <a onclick="return confirm('Apakah anda yakin ingin menghapus data gejala berikut ?');" href="<?php echo base_url() . 'index.php/admin/Pengetahuan/delete'?>/<?=$data_pengetahuan->kode_pengetahuan?>" class=" btn btn-danger" style="margin-bottom:10px;"></i> Hapus</a>
+                                                    </td>
                                                 </tr>
                                                 <?php endforeach ?>
                                             </tbody>

@@ -23,17 +23,24 @@
                                         <b><h3 class="text-center my-4">Halaman Login</h3></b>
                                     </div>
                                     <div class="card-body">
-                                        <form>
+                                        <form action="<?php echo base_url("member/login/aksi_login")?>" method="POST">
+                                        <?php
+                                            if($this->session->flashdata("notif")){
+                                            ?>
+                                                <span class="badge badge-danger"><?php echo $this->session->flashdata("notif") ?></span>
+                                        <?php
+                                            }
+                                        ?>
                                             <div class="form-group">
                                                 <label class="small mb-2" for="inputUsername">Username</label>
-                                                <input class="form-control py-4" id="inputUsername" type="username" placeholder="Masukan Username" />
+                                                <input class="form-control py-4" name="username" id="inputUsername" type="username" placeholder="Masukan Username" />
                                             </div>
                                             <div class="form-group">
                                                 <label class="small mb-2" for="inputPassword">Password</label>
-                                                <input class="form-control py-4" id="inputPassword" type="password" placeholder="Masukan Password" />
+                                                <input class="form-control py-4" name="password" id="inputPassword" type="password" placeholder="Masukan Password" />
                                             </div>
                                             <div class="form-group">
-                                                <center><button type="button" class="btn btn-danger">Login</button></center><br>
+                                                <center><button type="submit" class="btn btn-danger">Login</button></center><br>
                                             </div>
                                         </form>
                                     </div>

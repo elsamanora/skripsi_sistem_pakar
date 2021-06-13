@@ -79,8 +79,14 @@
                 </li> -->
                 <li>
                     <a href="<?= base_url() . 'index.php/admin/User' ?>">
-                        <i class="fa fa-user fa-lg"></i>
+                        <i class="fa fa-users fa-lg"></i>
                         User    
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url() . 'index.php/admin/Admin' ?>">
+                        <i class="fa fa-user fa-lg"></i>
+                        Admin
                     </a>
                 </li>
             </ul>

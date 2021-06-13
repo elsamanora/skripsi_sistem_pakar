@@ -29,10 +29,10 @@
                         <div class="page-title-wrapper">
                             <div class="page-title-heading">
                                 <div class="page-title-icon">
-                                    <i class="fa fa-file-medical-alt"></i>
+                                    <i class="fa fa-user fa-lg"></i>
                                 </div>
                                 <div>
-                                    Gejala
+                                    Admin
                                 </div>
                             </div>
                         </div>
@@ -43,7 +43,7 @@
                             <div class="card shadow mb-4">
                                 <!-- Datatable -->
                                 <div class="card-header">
-                                    Tambah Gejala
+                                    Data Admin 
                                 </div>
                                 <!-- Alert Success -->
                                 <div class="card-body">
@@ -54,24 +54,24 @@
 				                <?php endif; ?>
                                 <!-- End Alert -->
                                     <!-- Form -->
-                                    <form name="tambah_gejala" method="POST" action="<?php echo site_url('admin/gejala/tambah') ?>">
+                                    <form name="tambah_admin" method="POST" action="<?php echo site_url('admin/admin/tambah') ?>">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group-inner">
-                                                    <label for="kode_gejala" class="pull-left">Kode Gejala</label>
-                                                    <input type="text" name="kode_gejala" class="form-control form-control-sm <?php echo form_error('kode_gejala') ? 'is-invalid':''?>" placeholder="Masukkan Kode Gejala" required>
+                                                    <label for="username" class="pull-left">Username</label>
+                                                    <input type="text" name="username" class="form-control form-control-sm <?php echo form_error('username') ? 'is-invalid':''?>" placeholder="Masukkan Username" required>
                                                     <div class="invalid-feedback">
-									                    <?php echo form_error('kode_gejala') ?>
+									                    <?php echo form_error('Username') ?>
 								                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group-inner">
-                                                    <label for="" class="pull-left">Nama Gejala</label>
-                                                    <input type="text" name="nama_gejala" class="form-control form-control-sm <?php echo form_error('nama_gejala') ? 'is-invalid':''?>" placeholder="Masukkan Nama Gejala" required>
+                                                    <label for="password" class="pull-left">Password</label>
+                                                    <input type="text" name="password" class="form-control form-control-sm <?php echo form_error('password') ? 'is-invalid':''?>" placeholder="Masukkan Password" required>
                                                 </div>
                                                 <div class="invalid-feedback">
-									                    <?php echo form_error('nama_gejala') ?>
+									                    <?php echo form_error('password') ?>
 								                </div>
                                             </div>
                                         </div>

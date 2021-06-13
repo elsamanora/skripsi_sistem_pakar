@@ -49,7 +49,7 @@
                     <div class="widget-content-left">
                         <div class="btn-group">
                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                <img width="42" class="rounded-circle" src="<?php echo base_url(); ?>/assets/admin/images/avatars/els.jpg" alt="">
+                                <img width="42" class="rounded-circle" src="<?php echo base_url(); ?>/assets/admin/images/avatars/user.jpg" alt="">
                                 <i class="fa fa-angle-down ml-2 opacity-8"></i>
                             </a>
                             <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
@@ -58,13 +58,13 @@
                                 <h6 tabindex="-1" class="dropdown-header">Header</h6>
                                 <button type="button" tabindex="0" class="dropdown-item">Actions</button>
                                 <div tabindex="-1" class="dropdown-divider"></div> -->
-                                <button type="button" tabindex="0" class="dropdown-item">Logout</button>
+                                <a href="<?php echo base_url("member/login/logout")?>"><button type="button" tabindex="0" class="dropdown-item">Logout</button></a>
                             </div>
                         </div>
                     </div>
                     <div class="widget-content-left  ml-3 header-user-info">
                         <div class="widget-heading">
-                            Elsa Manora
+                            <?php echo $this->session->username?>
                         </div>
                         <div class="widget-subheading">
                             Administrator
