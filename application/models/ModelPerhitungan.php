@@ -23,4 +23,12 @@ Class ModelPerhitungan extends CI_Model
          return $this->db->get("jawaban_pasien");
      }
 
+     function get_cek_kuisioner($user)
+     {
+         $this->db->join("pertanyaan","pertanyaan.id_pertanyaan = jawaban_pasien.id_pertanyaan");
+         $this->db->join("gejala","gejala.id_gejala = pertanyaan.id_gejala");
+         $this->db->where("jawaban_pasien.id_user", $user);
+         return $this->db->get("jawaban_pasien");
+     }
+
 }

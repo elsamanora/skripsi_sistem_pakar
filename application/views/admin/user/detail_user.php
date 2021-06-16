@@ -96,6 +96,11 @@ $user = $this->M_user->getDetail($id_user)->row_array();?>
                         <label><b>Perhitungan dilakukan disetiap gejala yang dialami pd masing2 rule : </b></label>
                     </div>
                 </div>
+                <?php 
+                if($this->ModelPerhitungan->get_cek_kuisioner($id_user)->num_rows() < 33){?>
+                    <h3>Belum Mengisi Kuisioner</h3>
+                <?php }else{ ?>
+                
                 <div class="row">
                     <div class="col-4">
                     <table class="table table-striped">
@@ -350,7 +355,7 @@ $user = $this->M_user->getDetail($id_user)->row_array();?>
                         </div>
                     </div>
                 </div>
-
+                <?php }; ?>
                 <!-- footer -->
                 <?php $this->load->view("admin/_partials/footer.php") ?>
             </div>

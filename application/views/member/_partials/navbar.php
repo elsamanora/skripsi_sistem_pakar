@@ -18,10 +18,10 @@
                                          <li> <a href="<?= base_url() . 'member/Home' ?>">Home</a></li>
                                          <li> <a href="<?= base_url() . 'member/Informasi_penyakit' ?>">Informasi Penyakit</a></li>
                                          <li> <a href="<?= base_url() . 'member/Form_data_user' ?>">Konsultasi</a></li>
-                                         <?php 
+                                         <!-- <?php 
                                             if (isset($_SESSION['id_user'])) { ?>
                                          <li> <a href="<?= base_url() . 'member/Form_data_user/hasil' ?>">Hasil Konsultasi</a></li>
-                                         <?php   } ?>
+                                         <?php   } ?> -->
                                  </nav>
                              </div>
                              <div class="header-right-btn f-right d-none d-xl-block ml-20">
