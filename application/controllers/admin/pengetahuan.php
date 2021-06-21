@@ -18,7 +18,20 @@ class Pengetahuan extends CI_Controller
     
     public function tambah() //tambah
     {
-        $this->load->view("admin/pengetahuan/tambah_pengetahuan");
+        $this->load->model("admin/M_gejala");
+        $this->load->model("admin/M_penyakit");
+        $data['gejala'] = $this->M_gejala->getAll();
+        $data['penyakit'] = $this->M_penyakit->getAll();
+
+        $validation = $this->form_validation;
+        $validation->set_rules($this->M_pengetahuan->rules());
+
+        if ($validation->run()) {
+            $this->M_pengetahuan->save(); 
+            $this->session->set_flashdata('success', 'Berhasil disimpan');
+        }
+
+        $this->load->view("admin/pengetahuan/tambah_pengetahuan", $data);
     }
 
     public function edit($id = null)

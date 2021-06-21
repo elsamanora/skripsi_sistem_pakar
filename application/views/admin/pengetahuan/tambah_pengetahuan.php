@@ -47,22 +47,24 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- Form -->
-                                    <form name="tambah_pengetahuan" method="POST" action="">
+                                    <form name="tambah_pengetahuan" method="POST" action="<?php echo site_url('admin/pengetahuan/tambah') ?>">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <label for="">Kode Penyakit</label>
                                                 <select name="kd_penyakit" id="" class="form-control form-control-sm" required>
                                                     <option value="">--Pilih--</option>
-                                                    <option value="1">P1</option>
-                                                    <option value="0">P2</option>
+                                                    <?php foreach ($gejala as $key => $value) { ?>
+                                                        <option value="<?= $value->nama_gejala ?>"><?= $value->nama_gejala ?></option>
+                                                    <?php } ?>
                                                 </select>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="">Kode Gejala</label>
                                                 <select name="kd_gejala" id="" class="form-control form-control-sm" required>
                                                     <option value="">--Pilih--</option>
-                                                    <option value="1">G1</option>
-                                                    <option value="0">G2</option>
+                                                    <?php foreach ($penyakit as $key => $value) { ?>
+                                                        <option value="<?= $value->nama_penyakit ?>"><?= $value->nama_penyakit ?></option>
+                                                    <?php } ?>
                                                 </select>
                                             </div>
                                             <div class="col-md-6">
