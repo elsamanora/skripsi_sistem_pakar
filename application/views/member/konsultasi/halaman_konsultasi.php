@@ -92,13 +92,16 @@ button:hover {
         <br><br>
         
 <form id="regForm" action="<?php echo base_url()?>member/form_data_user/insert_jawaban" method="post">
-  <p>Pilih Gejala Sesuai Dengan Tingkat Keyakinan Yang Dirasakan :</p>
+  <div class="row">
+  <h2><p><b>Pilih Gejala Sesuai Dengan Tingkat Keyakinan Yang Dirasakan :</b></p></h2>
+  </div>
+  
   <!-- One "tab" for each step in the form: -->
   <div class="tab row">
   <?php $no=0; foreach ($this->M_Pertanyaan->get_pertanyaan()->result() as $value){
       $no++; 
       if ($no <= 10) { ?>
-    <?php echo $no;?>. <?php echo $value->nama_pertanyaan;?>
+    <?php echo $no;?>. <?php echo $value->nama_pertanyaan;?> <br>
                                 <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="1" required>
                                 <label><?php echo $value->jawaban_sangat_yakin;?></label>
                                 <br>
@@ -116,6 +119,7 @@ button:hover {
                                 <br>
                                 <input type="radio" name="jawaban<?php echo $value->id_pertanyaan;?>" value="0"required>
                                 <label><?php echo $value->jawaban_tidak_yakin;?></label>
+                                <br>
                                 <br>
      <?php }
      } ?>
