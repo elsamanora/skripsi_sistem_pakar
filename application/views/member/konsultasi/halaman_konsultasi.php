@@ -181,6 +181,7 @@ button:hover {
                                 <div style="float:right;">
                                   <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
                                   <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                  <button type="submit" id="submitBtn">Submit</button>
                                 </div>
                               </div>
                               <!-- Circles which indicates the steps of the form: -->
@@ -219,9 +220,11 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").style.display = "none";
+    document.getElementById("submitBtn").style.display = "inline";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").style.display = "inline";
+    document.getElementById("submitBtn").style.display = "none";
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
@@ -239,8 +242,8 @@ function nextPrev(n) {
   // if you have reached the end of the form...
   if (currentTab >= x.length) {
     // ... the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
+    // document.getElementById("regForm").submit();
+    // return false;
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
