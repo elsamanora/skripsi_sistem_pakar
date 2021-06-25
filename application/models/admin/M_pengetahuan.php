@@ -4,8 +4,6 @@ Class M_pengetahuan extends CI_Model
 {
     private $_table = "pengetahuan"; //nama tabel
     // nama kolom di tabel, harus sama huruf besar dan huruf kecilnya!
-    public $id_penyakit;
-    public $id_gejala;
     public $kode_pengetahuan;
     public $nama_penyakit;
     public $nama_gejala;
@@ -45,7 +43,7 @@ Class M_pengetahuan extends CI_Model
 
     public function getById($id) // untuk medapatkan data sesuai dengan id yang diinginkan
     {
-        return $this->db->get_where($this->_table, ["kode_pengetahuan" => $id])->row();
+        return $this->db->get_where($this->_table, ["kode_pengetahuan" => $id])->row_array();
     }
 
     public function save() //untuk menyimpan data ke tabel penyakit
@@ -53,23 +51,23 @@ Class M_pengetahuan extends CI_Model
         $post = $this->input->post();
         // $this->id_penanganan = uniqid();
         $this->kode_pengetahuan = $post["kode_pengetahuan"];
-        $this->nama_penanganan = $post["nilai_cf_pakar"];
-        $this->id_penyakit = $post['nama_penyakit'];
-        $this->id_gejala = $post['nama_gejala'];
+        $this->nama_penyakit = $post["nama_penyakit"];
+        $this->nama_gejala = $post['nama_gejala'];
+        $this->nilai_cf_pakar = $post['mb'];
         return $this->db->insert($this->_table,$this);
     }   
 
-    // public function update() //untuk edit data
-    // {
-    //     $post = $this->input->post();
-    //     $this->id_penanganan = $post["id_pengetahuan"];
-    //     $this->kode_penanganan = $post["kode_pengetahuan"];
-    //     $this->nama_penanganan = $post["nama_penanganan"];
-    //     return $this->db->update($this->_table,$this,array('id_penanganan' => $post['id_penanganan']));
-    // }
+    public function update() //untuk edit data
+    {
+        $post = $this->input->post();
+        $this->nama_penyakit = $post["nama_penyakit"];
+        $this->nama_gejala = $post['nama_gejala'];
+        $this->nilai_cf_pakar = $post['mb'];
+        return $this->db->update($this->_table,$this,array('kode_pengetahuan' => $post['kode_pengetahuan']));
+    }
 
     public function delete($id)
     {
-        return $this->db->delete($this->_table,array("id_pengetahuan"=>$id));
+        return $this->db->delete($this->_table,array("kode_pengetahuan"=>$id));
     }
 }

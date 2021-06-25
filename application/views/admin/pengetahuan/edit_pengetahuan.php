@@ -51,24 +51,32 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <label for="">Kode Penyakit</label>
-                                                <select name="kd_penyakit" id="" class="form-control form-control-sm" required>
+                                                <select name="nama_penyakit" id="" class="form-control form-control-sm" required>
                                                     <option value="">--Pilih--</option>
-                                                    <option value="1">P1</option>
-                                                    <option value="0">P2</option>
+                                                    <?php foreach ($penyakit as $key => $value) { ?>
+                                                        <option value="<?= $value->nama_penyakit ?>" <?php if(strtoupper($value->nama_penyakit) == strtoupper($pengetahuan['nama_penyakit'])) echo "selected";?>><?= $value->nama_penyakit ?></option>
+                                                    <?php } ?>
                                                 </select>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="">Kode Gejala</label>
-                                                <select name="kd_gejala" id="" class="form-control form-control-sm" required>
+                                                <select name="nama_gejala" id="" class="form-control form-control-sm" required>
                                                     <option value="">--Pilih--</option>
-                                                    <option value="1">G1</option>
-                                                    <option value="0">G2</option>
+                                                    <?php foreach ($gejala as $key => $value) { ?>
+                                                        <option value="<?= $value->nama_gejala ?>" <?php if(strtoupper($value->nama_gejala) == strtoupper($pengetahuan['nama_gejala'])) echo "selected";?>><?= $value->nama_gejala ?></option>
+                                                    <?php } ?>
                                                 </select>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group-inner">
+                                                    <label for="" class="pull-left">Kode Pengetahuan</label>
+                                                    <input type="text" value="<?php echo $pengetahuan['kode_pengetahuan'] ?>" name="kode_pengetahuan" class="form-control form-control-sm" placeholder="Masukkan Kode Pengetahuan" required readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group-inner">
                                                     <label for="" class="pull-left">MB</label>
-                                                    <input type="number" name="mb" class="form-control form-control-sm" placeholder="Masukkan MB" required>
+                                                    <input type="text" value="<?php echo $pengetahuan['nilai_cf_pakar'] ?>" name="mb" class="form-control form-control-sm" placeholder="Masukkan MB" required>
                                                 </div>
                                             </div>
                                         </div>

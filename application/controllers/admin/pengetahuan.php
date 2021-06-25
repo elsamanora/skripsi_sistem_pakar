@@ -8,6 +8,8 @@ class Pengetahuan extends CI_Controller
         parent::__construct();
         $this->load->model("admin/M_pengetahuan");
         $this->load->library('form_validation'); //memvalidasi input pada method tambah dan edit
+        $this->load->model("admin/M_gejala");
+        $this->load->model("admin/M_penyakit");
     }
 
     public function index()
@@ -18,8 +20,7 @@ class Pengetahuan extends CI_Controller
     
     public function tambah() //tambah
     {
-        $this->load->model("admin/M_gejala");
-        $this->load->model("admin/M_penyakit");
+        
         $data['gejala'] = $this->M_gejala->getAll();
         $data['penyakit'] = $this->M_penyakit->getAll();
 
@@ -29,9 +30,10 @@ class Pengetahuan extends CI_Controller
         if ($validation->run()) {
             $this->M_pengetahuan->save(); 
             $this->session->set_flashdata('success', 'Berhasil disimpan');
+            echo "asd";
+        }else{
+            $this->load->view("admin/pengetahuan/tambah_pengetahuan", $data);
         }
-
-        $this->load->view("admin/pengetahuan/tambah_pengetahuan", $data);
     }
 
     public function edit($id = null)
@@ -40,7 +42,9 @@ class Pengetahuan extends CI_Controller
         if (!isset($id)) redirect('admin/Pengetahuan');
        
         $pengetahuan = $this->M_pengetahuan;
-        $data['pengetahuan'] = $this->M_pengetahuan->getAll();
+        $data['pengetahuan'] = $this->M_pengetahuan->getById($id);
+        $data['gejala'] = $this->M_gejala->getAll();
+        $data['penyakit'] = $this->M_penyakit->getAll();
         $validation = $this->form_validation;
         $validation->set_rules($pengetahuan->rules());
 

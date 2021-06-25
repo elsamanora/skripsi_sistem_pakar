@@ -47,11 +47,21 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- Form -->
-                                    <form name="tambah_pengetahuan" method="POST" action="<?php echo site_url('admin/pengetahuan/tambah') ?>">
+                                    <form name="tambah_pengetahuan" method="POST" action="<?php echo site_url('admin/Pengetahuan/tambah') ?>">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label for="">Kode Penyakit</label>
-                                                <select name="kd_penyakit" id="" class="form-control form-control-sm" required>
+                                                <label for="">Penyakit</label>
+                                                <select name="nama_penyakit" id="" class="form-control form-control-sm" required>
+                                                    <option value="">--Pilih--</option>
+                                                    <?php foreach ($penyakit as $key => $value) { ?>
+                                                        <option value="<?= $value->nama_penyakit ?>"><?= $value->nama_penyakit ?></option>
+                                                    <?php } ?>
+                                                    
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="">Gejala</label>
+                                                <select name="nama_gejala" id="" class="form-control form-control-sm" required>
                                                     <option value="">--Pilih--</option>
                                                     <?php foreach ($gejala as $key => $value) { ?>
                                                         <option value="<?= $value->nama_gejala ?>"><?= $value->nama_gejala ?></option>
@@ -59,18 +69,15 @@
                                                 </select>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="">Kode Gejala</label>
-                                                <select name="kd_gejala" id="" class="form-control form-control-sm" required>
-                                                    <option value="">--Pilih--</option>
-                                                    <?php foreach ($penyakit as $key => $value) { ?>
-                                                        <option value="<?= $value->nama_penyakit ?>"><?= $value->nama_penyakit ?></option>
-                                                    <?php } ?>
-                                                </select>
+                                                <div class="form-group-inner">
+                                                    <label for="" class="pull-left">Kode Pengetahuan</label>
+                                                    <input type="text" name="kode_pengetahuan" class="form-control form-control-sm" placeholder="Masukkan Kode Pengetahuan" required>
+                                                </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group-inner">
                                                     <label for="" class="pull-left">MB</label>
-                                                    <input type="number" name="mb" class="form-control form-control-sm" placeholder="Masukkan MB" required>
+                                                    <input type="text" name="mb" class="form-control form-control-sm" placeholder="Masukkan MB" required>
                                                 </div>
                                             </div>
                                         </div>

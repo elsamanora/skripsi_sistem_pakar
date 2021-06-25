@@ -268,15 +268,20 @@ $id_user = $_SESSION['id_user'];
             }
             ?>
             <div class="row">
-              <label><b>Berdasarkan hasil konsultasi dengan melakukan pemillihan gejala yang saat ini dialami, maka anda di deteksi dini mengalami penyakit :
-                <?php echo $namaPenyakit[0]." ".round($dataPenyakit[0] * 100, 2) ?>%
-              </b></label>
-            </div><br>
+              <label><b>Berdasarkan hasil konsultasi dengan melakukan pemillihan gejala yang sedang dialami, maka anda di deteksi dini mengalami penyakit :</b></label>
+              <label><b><h4><?php echo $namaPenyakit[0] ?> </h4></b></label>
+            </div>
+            
+            <div class="row">
+            <label><b>Dengan persentase keyakinan sebesar : <h4><?php echo round($dataPenyakit[0] * 100, 2) ?> %</b></label><br>
+            </div>
+
+            <br>
 
             <!-- Start Hasil Konsultasi -->
             <div class="row">
               <div>
-                <label><b>Berikut beberapa kemungkinan penyakit lain yang di derita :</b></label>
+                <label>Kemungkinan lain penyakit yang dialami  :</label>
               </div>
             </div>
             <div class="row">
@@ -285,7 +290,7 @@ $id_user = $_SESSION['id_user'];
                   <tr>
                     <th scope="col">No</th>
                     <th scope="col">Nama Penyakit</th>
-                    <th scope="col">Nilai Kepastian CF</th>
+                    <th scope="col">Persentase Kepastian</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -314,7 +319,7 @@ $id_user = $_SESSION['id_user'];
 
                   <!-- saran -->
                   <div class="row">
-                    <label><b>Saran : Kunjungi dokter untuk melakukan pemeriksaan lebih lanjut . Terimakasih :)</b></label>
+                    <label><b>Saran : Kunjungi dokter untuk melakukan pemeriksaan lebih lanjut </b></label>
                   </div>
                 </div>
               </div>
