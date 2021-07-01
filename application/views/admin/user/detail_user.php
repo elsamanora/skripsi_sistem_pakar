@@ -93,10 +93,10 @@ $user = $this->M_user->getDetail($id_user)->row_array();?>
                                 <div class="card-body">
                                 <div class="row">
                     <div>
-                        <label><b>Perhitungan dilakukan disetiap gejala yang dialami pd masing2 rule : </b></label>
+                        <!-- <label><b>Perhitungan dilakukan disetiap gejala yang dialami pd masing2 rule : </b></label> -->
                     </div>
                 </div>
-                <?php 
+                <!-- <?php 
                 if($this->ModelPerhitungan->get_cek_kuisioner($id_user)->num_rows() < 33){?>
                     <h3>Belum Mengisi Kuisioner</h3>
                 <?php }else{ ?>
@@ -274,7 +274,7 @@ $user = $this->M_user->getDetail($id_user)->row_array();?>
                         </tbody>
                     </table>
                     </div>
-                </div><br>
+                </div><br> -->
 
                 <div class="row">
                     <div>
@@ -327,7 +327,7 @@ $user = $this->M_user->getDetail($id_user)->row_array();?>
                         <th scope="row">1</th>
                         <td>P01</td>
                         <td>Demam Berdarah</td>
-                        <td><?php echo round($cfcr1 * 100, 2);?>%</td>
+                        <td><?php echo round($cfcr1 * 100);?>%</td>
                     <?php 
                     // }elseif($cfcr2 >= $cfcr3 && $cfcr2 >= $cfcr1){ 
                     ?>
@@ -335,7 +335,7 @@ $user = $this->M_user->getDetail($id_user)->row_array();?>
                         <th scope="row">1</th>
                         <td>P02</td>
                         <td>Malaria</td>
-                        <td><?php echo round($cfcr2 * 100,2);?>%</td>
+                        <td><?php echo round($cfcr2 * 100);?>%</td>
                     <?php 
                     // }else{ 
                         ?>
@@ -343,7 +343,7 @@ $user = $this->M_user->getDetail($id_user)->row_array();?>
                         <th scope="row">1</th>
                         <td>P03</td>
                         <td>Thypoid</td>
-                        <td><?php echo round($cfcr3 * 100, 2);?>%</td>
+                        <td><?php echo round($cfcr3 * 100);?>%</td>
                     <?php 
                     // } 
                     ?>

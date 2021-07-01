@@ -42,7 +42,7 @@ $id_user = $_SESSION['id_user'];
     <br><br>
     <div class="about-me">
       <div class="container">
-        <div class="row">
+        <!-- <div class="row">
           <div>
             <label><b>Perhitungan dilakukan disetiap gejala yang dialami pd masing2 rule : </b></label>
           </div>
@@ -220,7 +220,7 @@ $id_user = $_SESSION['id_user'];
               </tbody>
             </table>
           </div>
-        </div><br>
+        </div><br> -->
 
         <div class="row">
           <div>
@@ -232,7 +232,7 @@ $id_user = $_SESSION['id_user'];
             <thead class="table-danger">
               <tr>
                 <th scope="col">No</th>
-                <th scope="col">Kode Gejala</th>
+                <!-- <th scope="col">Kode Gejala</th> -->
                 <th scope="col">Nama Gejala</th>
               </tr>
             </thead>
@@ -240,7 +240,7 @@ $id_user = $_SESSION['id_user'];
               <?php for ($i=0; $i < sizeof($arDialami); $i++) { ?>
                 <tr>
                   <th scope="row"><?php echo $i + 1;?></th>
-                  <td><?php echo $arDialami[$i]; ?></td>
+                  <!-- <td><?php echo $arDialami[$i]; ?></td> -->
                   <td><?php echo $this->ModelPerhitungan->get_gejala($arDialami[$i])->row_array()["nama_gejala"]; ?></td>
                   <tr>
                   <?php } ?>
@@ -273,7 +273,7 @@ $id_user = $_SESSION['id_user'];
             </div>
             
             <div class="row">
-            <label><b>Dengan persentase keyakinan sebesar : <h4><?php echo round($dataPenyakit[0] * 100, 2) ?> %</b></label><br>
+            <label><b>Dengan persentase keyakinan sebesar : <h4><?php echo round($dataPenyakit[0] * 100) ?> %</b></label><br>
             </div>
 
             <br>
@@ -300,14 +300,14 @@ $id_user = $_SESSION['id_user'];
                   <tr>
                     <th scope="row">2</th>
                     <td><?php echo $namaPenyakit[1] ?></td>
-                    <td><?php echo round($dataPenyakit[1] * 100, 2);?>%</td>
+                    <td><?php echo round($dataPenyakit[1] * 100);?>%</td>
                     <?php
                     // }elseif($cfcr2 >= $cfcr3 && $cfcr2 >= $cfcr1){
                     ?>
                     <tr>
                       <th scope="row">3</th>
                       <td><?php echo $namaPenyakit[2] ?></td>
-                      <td><?php echo round($dataPenyakit[2] * 100,2);?>%</td>
+                      <td><?php echo round($dataPenyakit[2] * 100);?>%</td>
                       <?php
                       // }else{
                       ?>
